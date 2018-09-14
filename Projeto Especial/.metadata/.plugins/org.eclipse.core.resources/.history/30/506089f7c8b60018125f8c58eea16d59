@@ -1,0 +1,100 @@
+package com.codex.imp;
+
+import java.security.Key;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+
+import javax.ws.rs.core.Response;
+
+import com.codex.data.ExercicioData;
+import com.codex.model.CasoTeste;
+import com.codex.model.Exercício;
+import com.codex.model.Solucao;
+import com.codex.model.User;
+import com.codex.imp.ExercicioManager;
+import com.codex.imp.UsersManager;
+
+public class ExercicioManager {
+	
+static ExercicioManager exManager = null;
+	
+	public static ExercicioManager getInstance() {
+		if (exManager == null) {
+			exManager = new ExercicioManager();
+
+		}
+return exManager;
+	}
+
+	// CREATE A NEW EXERCISE
+		public void createExercise(String titulo, String userIDAuthour, String exercicio,
+				String dificuldade, String tags, String linguagem, String input, String output) {
+
+			DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+			Date date = new Date();
+
+			String data = dateFormat.format(date);
+			System.out.println(dateFormat.format(date)); // 2016/11/16 12:08:43
+
+			List<User> users = UsersManager.getInstance().getUser(userIDAuthour);
+
+			String username = null;
+			String password = null;
+			String nome = null;
+			String email = null;
+
+			for (User user : users) {
+				username = user.getUsername();
+				password = user.getPassword();
+				nome = user.getNome();
+				email = user.getEmail();
+			}
+			User userC = new User(username,password, email, nome);
+			Solucao solucao = new Solucao(linguagem);
+			CasoTeste caso = new CasoTeste(input, output);
+
+			ExercicioData exerciseData = ExercicioData.getInstance();
+			exerciseData.createExercise(new Exercício(data, titulo,exercicio, dificuldade, userC, tags, solucao, caso));
+
+		}
+		
+		//Buscar todos os Exercícios
+		
+		public List<Exercício> getExercicios() {
+			ExercicioData exData = ExercicioData.getInstance();
+			return exData.getExercicios();
+		}
+		
+		//Buscar específico exercício por dificuldade
+		
+		public List<Exercício> getExDificuldade(String dificuldade) {
+			ExercicioData exData = ExercicioData.getInstance();
+			return exData.getExDificuldade(dificuldade);
+		}
+		
+		//Buscar específico exercício por utilizador
+		
+				public List<Exercício> getExUser(String username) {
+					ExercicioData exData = ExercicioData.getInstance();
+					return exData.getExUser(username);
+				}
+				
+				//Buscar específico exercício por linguagem
+				
+				public List<Exercício> getExLinguagem(String linguagem) {
+					ExercicioData exData = ExercicioData.getInstance();
+					return exData.getExLinguagem(linguagem);
+				}
+				
+		
+//Buscar específico exercício por tag
+				
+				public List<Exercício> getExTags(String tags) {
+					ExercicioData exData = ExercicioData.getInstance();
+					return exData.getExTags(tags);
+				}
+				
+}

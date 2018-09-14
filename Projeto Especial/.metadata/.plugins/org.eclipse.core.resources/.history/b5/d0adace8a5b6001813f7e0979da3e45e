@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CODEX</title>
+
+
+
+    <meta name="viewport" content="width=device-width , initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+
+    <!-- JS para pagina em geral -->
+    <script src="JavaScript/index.js"></script>
+
+    <!-- Css -->
+    <link rel="stylesheet" href="CSS/estilizacao.css">
+
+    <script>
+  $(document).ready(function(){
+    	
+    	var myToken;
+		if (localStorage.token == null) {
+			myToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiYWRtaW4iOnRydWV9.TJVA95OrM7E2cBab30RMHrHDcEfxjoYZgeFONFh7HgQ";
+		} else {
+			myToken = localStorage.token;
+		}
+    	
+    	$("#btnLog").click(function(){
+    		console.log("sdfstgs");
+    		$.ajax({
+    			  method: "POST",
+    			  url: "http://localhost:8080/CODEX/rest/users/auth",
+    			  data: { 
+    				  username: $("#username").val(), 
+    				  pass: $("#password").val(), 
+    			  }
+    			})
+    		  .done(function( msg ) {
+    		      console.log("Token: " + msg)
+    		      localStorage.setItem("token", msg);
+    		      window.location.href = "homePage.html";
+    		  });
+    	});
+   
+    
+    $("#btnRegist").click(function(){
+		$.ajax({
+			  method: "POST",
+			  url: "http://localhost:8080/CODEX/rest/users",
+			  data: { 
+				  username: $("#registUsername").val(), 
+				  password: $("#registPassword").val(),
+				  email: $("#registEmail").val(),
+				  name: $("#registNome").val()
+		
+			  }
+			})
+		  .done(function( msg ) {
+		      console.log("Token: " + msg)
+		      localStorage.setItem("token", msg);
+		      window.location.href = "homePage.html";
+		      
+		  });
+	});
+    $("#btnlogout").click(function () {
+        localStorage.clear();
+        window.location.href = "index.html";
+    });
+});
+    </script>
+
+</head>
+
+<body style="background-color: #ebebe0">
+
+    <div class="container">
+        <p class="round1" id="Descubra"></p>
+        <div class="customHr " style="margin-top: 100px">.</div>
+        <center>
+        <div class="row">
+            <h2>Regista-te Já</h2>
+        </div>
+    </center>
+ 		<nav id="mainNav" class="navbar navbar-default navbar-fixed-top" style="padding:10px;background-color:rgba(255,255,255,0.5)">
+			<div class="collapse navbar-collapse w3-container">
+
+				<ul class="nav navbar-nav" style="margin-left:30px">
+
+					<h1 style="color:#ff751a;font-size:30px">
+						CODEX
+					</h1>
+
+
+
+				</ul>
+
+				<!-- Navegação -->
+				<ul class="nav navbar-nav navbar-right" style="margin-right:30px">
+		
+					<li>
+						<a id="btnEx"  class="page-scroll" href="RegistoUtilizador.html">Exercícios</a>
+					</li>
+					<!-- Form Login -->
+					<li>
+					<a class="page-scroll" href="Login.html">Iniciar Sessão</a>
+					</li>
+					<!--Fim Login -->
+				</ul>
+			</div>
+		</nav>
+        <!-- Fim de navbar -->
+
+        
+        <div class="customHr" id="sugest" style="margin-top: 50px">.</div>
+
+        <div class="row">
+        <br>
+        <div class="col-md-12">
+        <div class="col-md-4"></div>
+        
+            <div class="col-md-4">
+		<form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
+								<div class="form-group">
+									<label for='registUsername' class='sr-onl'>Nome de Utilizador</label>
+									<input id='registUsername' type='username' required='' placeholder='Username' class='form-control' name='registUsername'>
+								</div>
+								<div class="form-group">
+									<label for='registPassword' class='sr-onl'>Palavra Passe</label>
+									<input id='registPassword' type='password' required='' placeholder='Password' class='form-control' name='registPassword'>
+								</div>
+								<div class="form-group">
+									<label for='registEmail' class='sr-onl'>Email</label>
+									<input id='registEmail' type='email' required='' placeholder='Email' class='form-control' name='registEmail'>
+								</div>
+
+								<div class="form-group">
+									<label for='registNome' class='sr-onl'>Nome</label>
+									<input id='registNome' type='text' required='' placeholder='Nome' class='form-control' name='registNome'>
+								</div>
+								</form>
+								<br>
+								<button id="btnRegist" class="btn btn-success form-control" data-dismiss="modal">Registar</button>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								</div>
+								
+								<br><br>
+								
+								
+								
+								</div>
+								<div class="col-md-4"></div>
+									
+								
+								
+									
+								
+              
+
+            </div>
+        </div>
+
+</body>
+
+</html>

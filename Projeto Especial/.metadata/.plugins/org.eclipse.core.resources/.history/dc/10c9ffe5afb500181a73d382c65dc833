@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>CODEX</title>
+
+
+
+	<meta name="viewport" content="width=device-width , initial-scale=1">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+
+	
+
+	<!-- Css -->
+	<link rel="stylesheet" href="CSS/estilizacao.css">
+	<link rel="stylesheet" href="CSS/dropdown.css">
+
+<script>
+	$(document)
+			.ready(
+					function() {
+
+						var myToken;
+						if (localStorage.token == null) {
+							myToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiYWRtaW4iOnRydWV9.TJVA95OrM7E2cBab30RMHrHDcEfxjoYZgeFONFh7HgQ";
+						} else {
+							myToken = localStorage.token;
+						}
+
+						$("#btnaddEx")
+								.click(
+										function() {
+											$
+													.ajax(
+															{
+																method : "POST",
+																url : "http://localhost:8080/CODEX/rest/exercicios",
+																data : {
+																	titulo : $(
+																			"#tituloEx")
+																			.val(),
+																	exercicio : $(
+																			"#descricaoEx")
+																			.val(),
+																	linguagem : $(
+																			"#linguagemEx")
+																			.val(),
+																	dificuldade : $(
+																			"#dificuldadeEx")
+																			.val(),
+																	tags : $(
+																			"#tagSnippet")
+																			.val(),
+																	input : $(
+																			"#inputEx")
+																			.val(),
+																	output : $(
+																			"#outputEx")
+																			.val(),
+																	token : myToken
+																}
+															})
+													.done(function(data) {
+																console.log("Exercício Criado")
+																														});
+										});
+
+					});
+</script>
+
+</head>
+
+<body>
+
+	<div class="container">
+		<p class="round1" id="Descubra"></p>
+		<div class="customHr " style="margin-top:100px">.</div>
+
+		<div class="row">
+			<h2>
+				Adiciona o Teu Exercício De Programação
+			</h2>
+		</div>
+
+		<!-- NAVBAR -->
+		<nav id="mainNav" class="navbar navbar-default navbar-fixed-top" style="padding:10px;background-color:rgba(255,255,255,0.5)">
+			<div class="collapse navbar-collapse w3-container">
+
+				<ul class="nav navbar-nav">
+
+					<h1>
+						CODEX
+					</h1>
+
+
+
+				</ul>
+
+				<!-- Navegação -->
+				<ul class="nav navbar-nav navbar-right">
+					<div class="dropdown">
+    					<button class="dropbtn">Exercícios
+     					 	<i class="fa fa-caret-down"></i>
+    					</button>
+    				<div class="dropdown-content">
+      						<a href="#">Fácil</a>
+      						<a href="#">Intermédia</a>
+     						 <a href="#">Díficil</a>
+   				 </div>
+ 				 </div> 
+					<li>
+						<a class="page-scroll" href="homePage.html">Homepage</a>
+					</li>
+					<li>
+						<a class="page-scroll" href="EditarPerfil.html">Editar Perfil</a>
+					</li>
+					<!-- Form Login -->
+					<li id="logoutnav" style="display:none">
+						<a href="#" id="logout">Logout</a>
+					</li>
+
+				</ul>
+				</li>
+				<!--Fim Login -->
+				</ul>
+			</div>
+		</nav>
+		<!-- Fim de navbar -->
+
+
+		<div class="customHr" id="sugest" style="margin-top:50px">.</div>
+
+		<div class="row">
+			<div class="col-md-12">
+				<div class="row" id="bigDiv">
+					<div class="row" id="snippetInfo">
+						<div class="col-md-12" id="snipBar">
+							<div class="row" id="snipList" style="margin-left: 10px; margin-right: 10px">
+								<form id="newSnipForm">
+									<div class='form-group'>
+										<div class="row">
+											<br>
+											<div class="col-md-3">
+												<label for='tituloEx' class='sr-onl'>Título
+												</label>
+											</div>
+											<div class="col-md-9">
+												<input id='tituloEx' style='width: 300px; margin-left: 10px' required='' placeholder='Snippet Name' class='form-control'
+												 name='nomeSnippet'>
+											</div>
+										</div>
+									</div>
+									<br>
+									<div class='form-group'>
+										<div class="row">
+											<div class="col-md-3">
+												<label for='descricaoEx' class='sr-onl'>Descrição</label>
+											</div>
+											<div class="col-md-9">
+												<textarea id='descricaoEx' name="descricaoSnippet" class='form-control' style="height: 300px; width: 700px; margin-left: 10px"></textarea>
+											</div>
+										</div>
+									</div>
+									<br>
+									<div class='form-group'>
+										<div class="row">
+											<div class="col-md-3">
+												<label for='linguagemEx' class='sr-onl'>Linguagem</label>
+											</div>
+											<div class="col-md-9">
+												<select id="linguagemEx" class="form-control">
+												<option value="HTML">HTML</option>
+												<option value="JavaScript">JavaScript</option>
+												<option value="CSharp">C#</option>
+												<option value="Java">Java</option>
+												<option value="CPlus">C++</option>
+												</select>
+											</div>
+										</div>
+									</div>
+									<br>
+									<div class='form-group'>
+										<div class="row">
+											<div class="col-md-3">
+												<label for='dificudadeEx' class='sr-onl'>Dificuldade</label>
+											</div>
+											<div class="col-md-9">
+												<select id="dificuldadeEx" class="form-control">
+												<option value="Iniciante">Iniciante</option>
+												<option value="Intermédia">Intermédia</option>
+												<option value="Díficil">Díficil</option>
+												</select>
+											</div>
+										</div>
+									</div>
+									<br>
+									<div class='form-group'>
+										<div class="row">
+											<div class="col-md-3">
+												<label for='tagEx' class='sr-onl'>Tags</label>
+											</div>
+											<div class="col-md-9">
+												<input id='tagEx' style="width: 300px; margin-left: 10px" required='' placeholder='Tag' class='form-control' name='TagSnippet'>
+											</div>
+										</div>
+									</div>
+									<br>
+									<div class='form-group'>
+										<div class="row">
+											<div class="col-md-3">
+												<label for='inputEx' class='sr-onl'>Código</label>
+											</div>
+											<div class="col-md-9">
+												<textarea id='inputEx' name="conteudoSnippet" class='form-control' style="height: 500px; width: 700px; margin-left: 10px"></textarea>
+											</div>
+										</div>
+									</div>
+									<div class='form-group'>
+										<div class="row">
+											<div class="col-md-3">
+												<label for='outputEx' class='sr-onl'>Output</label>
+											</div>
+											<div class="col-md-9">
+												<textarea id='outputEx' name="conteudoSnippet" class='form-control' style="height: 500px; width: 700px; margin-left: 10px"></textarea>
+											</div>
+										</div>
+									</div>
+<br>
+<br>
+									<div class='form-group'>
+										<!-- <center> -->
+											<button id="btnaddEx" style=" width: 300px" class='btn btn-success form-control'>Adicionar Exerício
+											</button>
+										<!-- </center> -->
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+</body>
+
+</html>

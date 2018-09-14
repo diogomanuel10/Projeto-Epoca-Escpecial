@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Snippet World</title>
+
+
+
+	<meta name="viewport" content="width=device-width , initial-scale=1">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+
+	<!-- JS para pagina em geral -->
+	<script src="Script/index.js"></script>
+
+	<!-- Css -->
+	<link rel="stylesheet" type="text/css" href="CSS/estilizacao.css">
+
+
+	<script>
+	
+	
+	
+	 //CHANGE ACCOUNT PASSWORD REQUEST
+    $("#btnEditar").click(function () {
+        username = $("#altUsername").val();
+        var urlRequest = "http://localhost:8080/CODEX/rest/users/" + username;
+        $.ajax({
+            method: "PUT",
+            url: urlRequest,
+            data: {
+
+                pass: $("#altPassword").val(),
+                NovaPassword: $("#CaltPassword").val(),
+                token: myToken
+            }
+        })
+            .done(function (data) {
+            	
+            });
+    });
+	
+	
+	</script>
+</head>
+
+<body>
+
+	<div class="container">
+		<p class="round1" id="Descubra"></p>
+		<div class="customHr " style="margin-top:100px">.</div>
+
+		<nav id="mainNav" class="navbar navbar-default navbar-fixed-top" style="padding:10px;background-color:rgba(255,255,255,0.5)">
+			<div class="collapse navbar-collapse w3-container">
+
+				<ul class="nav navbar-nav">
+
+					<h1>
+						Snippet world
+					</h1>
+
+
+
+				</ul>
+
+				<!-- Navegação -->
+				<ul class="nav navbar-nav navbar-right">
+		
+					<li>
+						<a class="page-scroll" href="#infopanel">Snippets</a>
+					</li>
+					<li>
+						<a class="page-scroll" href="#infopanel">Adicionar Snippets</a>
+					</li>
+					<li>
+						<a class="page-scroll" href="#infopanel">Editar Perfil</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<!-- Fim de navbar -->
+		<center>
+	<h3>Editar Perfil</h3>
+</center>
+		<div class="customHr" id="sugest" style="margin-top:50px">.</div>
+
+		<div class="row">
+		<div class="form-group">
+									<label for='altUsername' class='sr-onl'>Username</label>
+									<input id='altUsername' type='text' required='' placeholder='Username' class='form-control' name='altUsername'>
+								</div>
+			<div class="form-group">
+									<label for='altPassword' class='sr-onl'>Alterar Palavra Passe</label>
+									<input id='altPassword' type='password' required='' placeholder='Password' class='form-control' name='altPassword'>
+								</div>
+								<div class="form-group">
+									<label for='CaltPassword' class='sr-onl'>Confirmar Alteração da Palavra Passe</label>
+									<input id='CaltPassword' type='password' required='' placeholder='Confirmar Password' class='form-control' name='CaltPassword'>
+								</div>
+								<div class="form-group">
+									<button id="btnEditar" class="btn btn-success form-control" data-dismiss="modal">Alterar</button>
+								</div>
+								
+		</div>
+
+
+
+</body>
+
+
+</html>

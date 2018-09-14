@@ -1,0 +1,22 @@
+#tblS {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#tblS td, #tblS th {
+    border: 1px solid #ddd;
+    padding: 15px;
+}
+
+th{background-color: blue;}
+
+#tblS tr:hover {background-color: #ddd;}
+
+#tblS th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: blue;
+    color: white;
+}

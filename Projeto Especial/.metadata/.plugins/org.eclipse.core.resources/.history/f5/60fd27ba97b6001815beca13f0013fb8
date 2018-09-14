@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>CODEX</title>
+
+
+
+	<meta name="viewport" content="width=device-width , initial-scale=1">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+
+	<!-- JS para pagina em geral -->
+	<script src="JavaScript/index.js"></script>
+
+	<!-- Css -->
+	<link rel="stylesheet" type="text/css" href="CSS/estilizacao.css">
+	<script>
+    
+    $(document).ready(function(){
+    	
+    	var myToken;
+		if (localStorage.token == null) {
+			myToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiYWRtaW4iOnRydWV9.TJVA95OrM7E2cBab30RMHrHDcEfxjoYZgeFONFh7HgQ";
+		} else {
+			myToken = localStorage.token;
+		}
+    	
+    	$("#btnLog").click(function(){
+    		console.log("sdfstgs");
+    		localStorage.setItem("username",$("#username").val());
+    		$.ajax({
+    			  method: "POST",
+    			  url: "http://localhost:8080/CODEX/rest/users/auth",
+    			  data: { 
+    				  username: $("#username").val(), 
+    				  pass: $("#password").val(), 
+    			  }
+    			})
+    		  .done(function( msg ) {
+    		      console.log("Token: " + msg)
+    		      localStorage.setItem("token", msg);
+    		      window.location.href = "homePage.html";
+    		  });
+    	});
+   
+    
+    $("#btnRegist").click(function(){
+		$.ajax({
+			  method: "POST",
+			  url: "http://localhost:8080/CODEX/rest/users",
+			  data: { 
+				  username: $("#registUsername").val(), 
+				  password: $("#registPassword").val(),
+				  email: $("#registEmail").val(),
+				  name: $("#registNome").val()
+		
+			  }
+			})
+		  .done(function( msg ) {
+		      console.log("Token: " + msg)
+		      localStorage.setItem("token", msg);
+		      window.location.href = "homePage.html";
+		      
+		  });
+	});
+});
+    
+    </script>
+
+</head>
+
+<body style="background-color: #ebebe0">
+
+	<div class="container">
+		<p class="round1" id="Descubra"></p>
+		<div class="customHr " style="margin-top:100px">.</div>
+
+		<div class="row" >
+
+			<div class="jumbotron" style="background-color:rgb(255, 163, 102);color:#f5f5f0">
+				
+				<p style="font-size:30px">
+				Queres aprender programação e não sabes por onde começar?
+				</p>
+				<br>
+				<p style="font-size:18px">
+					Nós temos a solução ideal para ti!
+				</p>
+				
+				<p style="font-size:18px">
+				Resolve os nossos exercícios e torna-te um profissional em programação
+				</p>
+
+			</div>
+
+		</div>
+		<center>
+
+			<!-- Fim Modal -->
+
+			
+		</center>
+		<!-- NAVBAR -->
+		<nav id="mainNav" class="navbar navbar-default navbar-fixed-top" style="padding:10px;background-color:rgba(255,255,255,0.5)">
+			<div class="collapse navbar-collapse w3-container">
+
+				<ul class="nav navbar-nav" style="margin-left:30px">
+
+					<h1 style="color:#ff751a;font-size:30px">
+						CODEX
+					</h1>
+
+
+
+				</ul>
+
+				<!-- Navegação -->
+				<ul class="nav navbar-nav navbar-right" style="margin-right:30px">
+		
+					<li>
+						<a  class="page-scroll" href="Snippets.html">Exercícios</a>
+					</li>
+					<!-- Form Login -->
+					
+				<li id="loginnav" class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							<b>Inicia Sessão</b>
+							<span class="caret"></span>
+						</a>
+						<ul id="login-dp" class="dropdown-menu" style="width:200px;padding:5px">
+							<li>
+								<div class="row">
+									<div class="col-md-12">
+										<form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
+											<div class="form-group">
+												<label for='username' class='sr-only'>Nome de Utilizador</label>
+												<input id='username' type='username' required='' placeholder='Username' class='form-control' name='username'>
+											</div>
+											<div class="form-group">
+												<label for='password' class='sr-only'>Palavra Passe</label>
+												<input id='password' type='password' required='' placeholder='Password' class='form-control' name='password'>
+											</div>
+											<div class='form-group'>
+												<button id="btnLog" class='btn btn-primary btn-block'>Iniciar Sessão</button>
+											</div>
+
+										</form>
+									</div>
+									<div class="bottom text-center">
+										Não Tens Conta?
+										<button  href="RegistoUtilizador.html">
+											<b>Regista-te Já!</b>
+										</button>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</li>
+					<!--Fim Login -->
+				</ul>
+			</div>
+		</nav>
+		<!-- Fim de navbar -->
+
+
+		<div class="customHr" id="sugest" style="margin-top:50px">.</div>
+<br>
+		<br>
+		<div class="row">
+			<div class="col-md-4">
+
+				<img src="Images/Facil.png" style="width:250px;height:240px ">
+			</div>
+			<div class="col-md-8">
+				<div class="row">
+				
+				<h1 style="color:#ff751a">Exercícios para Iniciantes</h1>
+				</div>
+				<br>
+				<div class="row">
+				
+				
+				<p>
+				Se esta é a tua primeira vez a programar, estes são os exercícios por onde devemos começar esta tua caminhada!
+				</p>
+				<p>
+				 Resolve-os e alcança o próximo nível de dificuldade!
+				</p>
+				<p>
+				<a class="btn" href=""http://localhost:8080/CODEX/rest/exercicios?dificuldade=Iniciante"" style="color:#ff751a"">
+						<b>«Resolve-os já!»</b>
+					</a>
+				</p>
+				
+				</div>
+				
+			</div>
+		</div>
+		<br>
+		<br>
+		<br>
+		<br>
+		<div class="row">
+			<div class="col-md-4">
+
+					<img src="Images/Media.png" style="width:250px;height:240px ">			
+			</div>
+			<div class="col-md-8">
+
+				<div class="row">
+				
+				<h1 style="color:#ff751a">Exercícios Intermédios</h1>
+				</div>
+				<br>
+				<div class="row">
+				<p style="text-align:justify"> HTML é a sigla de HyperText Markup Language, expressão inglesa que significa "Linguagem de Marcação de Hipertexto". Consiste
+					numa linguagem de marcação utilizada para produção de páginas na web, que permite a criação de documentos que podem
+					ser lidos em praticamente qualquer tipo de computador e transmitidos pela internet.
+					<br>
+
+				</p>
+					<p>
+				<a class="btn" href=""http://localhost:8080/CODEX/rest/exercicios?dificuldade=Iniciante"" style="color:#ff751a"">
+						<b>«Resolve-os já!»</b>
+					</a>
+				</p>
+				</div>
+				
+			</div>
+			
+		</div>
+		<br>
+		<br>
+		<br>
+		<br>
+		<div class="row">
+			<div class="col-md-4">
+
+					<img src="Images/dificil.png" style="width:250px;height:240px ">			
+			</div>
+			<div class="col-md-8">
+
+				<div class="row">
+				
+				<h1 style="color:#ff751a">Exercícios para Profissionais</h1>
+				</div>
+				<br>
+				<div class="row">
+				<p style="text-align:justify"> 
+					<br>
+
+				</p>
+				
+					<p>
+				<a class="btn" href=""http://localhost:8080/CODEX/rest/exercicios?dificuldade=Iniciante"" style="color:#ff751a"">
+						<b>«Resolve-os já!»</b>
+					</a>
+				</p>
+				</div>
+				
+			</div>
+			
+
+
+
+</body>
+
+</html>

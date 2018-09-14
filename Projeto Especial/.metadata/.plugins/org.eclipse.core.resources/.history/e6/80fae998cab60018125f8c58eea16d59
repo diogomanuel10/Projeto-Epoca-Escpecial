@@ -1,0 +1,144 @@
+package com.codex.data;
+
+import org.bson.codecs.configuration.CodecRegistry;
+import org.bson.codecs.pojo.PojoCodecProvider;
+
+import static com.mongodb.client.model.Filters.*;
+
+import static org.bson.codecs.configuration.CodecRegistries.fromProviders;
+import static org.bson.codecs.configuration.CodecRegistries.fromRegistries;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.ws.rs.core.Response;
+
+import com.codex.model.Exercício;
+import com.mongodb.Block;
+import com.mongodb.MongoClient;
+import com.mongodb.MongoClientOptions;
+import com.mongodb.client.MongoCollection;
+import com.mongodb.client.MongoDatabase;
+
+public class ExercicioData {
+	
+	static ExercicioData exData = null;
+	static MongoCollection<Exercício> colExercicios;
+
+	public static ExercicioData getInstance() {
+		
+		if (exData == null) {
+			exData = new ExercicioData();
+
+			CodecRegistry pojoCodecRegistry = fromRegistries(MongoClient.getDefaultCodecRegistry(),
+					fromProviders(PojoCodecProvider.builder().automatic(true).build()));
+			MongoClient mongoClient = new MongoClient("localhost",
+					MongoClientOptions.builder().codecRegistry(pojoCodecRegistry).build());
+			MongoDatabase dbExercise = mongoClient.getDatabase("CODEX");
+			colExercicios = dbExercise.getCollection("Exs", Exercício.class);
+		}
+return exData;
+	}
+
+	public Response createExercise(Exercício ex) {
+		if (colExercicios.find(eq("title", ex.getTitulo())).first() == null) {
+			colExercicios.insertOne(ex);
+}
+		return Response.serverError().status(200).type("text/plain").entity("ID Already Exists").build();
+	}
+	
+	//Buscar todos os exercícios
+	
+	public List<Exercício> getExercicios(){
+		final List<Exercício> exs = new ArrayList<Exercício>();
+		Block<Exercício> printBlock = new Block<Exercício>() {
+			public void apply(final Exercício ex) {
+				exs.add(ex);
+				
+			}
+		};
+		
+		colExercicios.find().forEach(printBlock);
+		return exs;
+		
+	}
+	
+	//Buscar exerícios por Dificuldade
+	
+	public List<Exercício> getExDificuldade(String dificuldade) {
+		final List<Exercício> exs = new ArrayList<Exercício>();
+		Block<Exercício> printBlock = new Block<Exercício>() {
+			public void apply(final Exercício ex) {
+				exs.add(ex);
+			}
+		};
+		colExercicios.find(eq("dificuldade", dificuldade)).forEach(printBlock);
+
+		return exs;
+	}
+	
+	//Buscar exercícios por utilizador
+	
+	public List<Exercício> getExUser(String username) {
+		final List<Exercício> exs = new ArrayList<Exercício>();
+		Block<Exercício> printBlock = new Block<Exercício>() {
+
+			public void apply(final Exercício ex) {
+				exs.add(ex);
+			}
+		};
+		colExercicios.find(eq("author.username", username)).forEach(printBlock);
+		return exs;
+	}
+	
+	//Buscar exercícios por linguagem
+	
+		public List<Exercício> getExLinguagem(String linguagem) {
+			final List<Exercício> exs = new ArrayList<Exercício>();
+			Block<Exercício> printBlock = new Block<Exercício>() {
+
+				public void apply(final Exercício ex) {
+					exs.add(ex);
+				}
+			};
+			colExercicios.find(eq("solucao.linguagem", linguagem)).forEach(printBlock);
+			return exs;
+		}
+		
+		//Buscar exercícios por tag
+		
+		public List<Exercício> getExTags(String tags) {
+			final List<Exercício> exs = new ArrayList<Exercício>();
+			Block<Exercício> printBlock = new Block<Exercício>() {
+
+				public void apply(final Exercício ex) {
+					exs.add(ex);
+				}
+			};
+			colExercicios.find(eq("tags", tags)).forEach(printBlock);
+			return exs;
+		}
+		
+		//Buscar exercícios por tag
+		
+				public List<Exercício> getExTitulo(String titulo) {
+					final List<Exercício> exs = new ArrayList<Exercício>();
+					Block<Exercício> printBlock = new Block<Exercício>() {
+
+						public void apply(final Exercício ex) {
+							exs.add(ex);
+						}
+					};
+					colExercicios.find(eq("tags", tags)).forEach(printBlock);
+					return exs;
+				}
+		
+		// REMOVE EXERCISE
+		public Response removeEx(String titulo) {
+			colExercicios.deleteOne(eq("titulo", titulo));
+			return null;
+		}
+	
+			
+		
+}

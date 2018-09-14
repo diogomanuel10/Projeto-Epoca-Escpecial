@@ -1,0 +1,53 @@
+package com.codex.api;
+
+
+
+import javax.ws.rs.Consumes;
+import javax.ws.rs.FormParam;
+import javax.ws.rs.POST;
+import javax.ws.rs.Path;
+import javax.ws.rs.core.Context;
+import javax.ws.rs.core.Response;
+import javax.ws.rs.core.UriBuilder;
+import javax.ws.rs.core.UriInfo;
+
+import com.codex.imp.ExercicioManager;
+import com.codex.imp.UsersManager;
+
+import io.jsonwebtoken.Jwts;
+import io.jsonwebtoken.SignatureException;
+
+@Path("/exercicios")
+public class ExercicioResources {
+
+	@POST
+	@Consumes("application/x-www-form-urlencoded")
+	public Response insertExercise(@FormParam("titulo") String title, @FormParam("token") String token, @FormParam("exercicio") String exercicio,
+			@FormParam("linguagem") String linguagem, @FormParam("dificuldade") String dificuldade, @FormParam("tags") String tags, @FormParam("codigo") String codigo, 
+			@FormParam("input") String input, @FormParam("output") String output, @Context UriInfo uriInfo) {
+
+		UsersManager userM = new UsersManager();
+		ExercicioManager exManager = ExercicioManager.getInstance();
+
+		try {
+			// Verify JWT token
+			Jwts.parser().setSigningKey(userM.getKey()).parseClaimsJws(token);
+			// OK, we can trust this JWT
+
+			// Get user data
+			String Autoruser = (String) Jwts.parser().setSigningKey(userM.getKey()).parseClaimsJws(token)
+			.getBody().get("username");
+
+			exManager.createExercise(title, token, exercicio, linguagem, dificuldade, tags,codigo,Autoruser,tags,,linguagem,,input,output);
+
+			UriBuilder builder = uriInfo.getAbsolutePathBuilder();
+			builder.path(title);
+			return Response.created(builder.build()).build();
+
+		} catch (SignatureException e) {
+			// don't trust the JWT!
+			return Response.serverError().status(401).type("text/plain").entity("No valid token!").build();
+		}
+		}
+
+}

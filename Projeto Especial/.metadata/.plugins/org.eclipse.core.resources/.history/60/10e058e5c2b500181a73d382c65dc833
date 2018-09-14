@@ -1,0 +1,187 @@
+h1{
+   font-size: 30px;
+   color: darkcyan
+}
+body{
+    background-color: #fffacc;
+}
+p{
+    text-align: center;
+}
+img {
+    display: block;
+    margin: auto;
+    width: 40%;
+}
+h2{
+    text-align: center;
+    font-size: 25px;
+}
+h3{
+    font-size: 17px;
+     font-weight: bold;
+    text-decoration: underline;
+}
+table{
+	border: solid 1px black;
+	border-spacing: 5px;
+	width:50%;
+}
+
+#filtros{
+    font-size: 18px;
+}
+.jumbotron{
+
+    background-color: rgba(252, 201, 0,0.3);
+}
+
+.customHr {
+    width: 103%;
+    font-size: 1px;
+    color: rgba(0, 0, 0, 0);
+    line-height: 1px;
+    
+    background-color: red;
+    margin-top: 6px;
+    margin-bottom: 10px;
+}
+#rodape {
+background-color: dimgray
+}
+
+#RS {
+background-color: gray
+}
+
+
+/*The Close Button*/
+.close {
+color: #aaa;
+float: right;
+font-size: 28px;
+font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+color: black;
+text-decoration: none;
+cursor: pointer;
+}
+
+/*Login Css*/
+#login-dp{
+min-width: 250px;
+padding: 14px 14px 0;
+overflow:hidden;
+background-color:rgba(255,255,255,.8);
+}
+#login-dp .help-block{
+font-size:12px    
+}
+#login-dp .bottom{
+background-color:rgba(255,255,255,.8);
+border-top:1px solid #ddd;
+clear:both;
+padding:14px;
+}
+#login-dp .social-buttons{
+margin:12px 0    
+}
+#login-dp .social-buttons a{
+width: 49%;
+}
+#login-dp .form-group {
+margin-bottom: 10px;
+}
+.btn-gg{
+color: #fff;
+background-color:#3b5998;
+}
+.btn-gg:hover{
+color: #fff;
+background-color:#496ebc 
+}
+@media(max-width:768px){
+#login-dp{
+background-color: inherit;
+color: #fff;
+}
+#login-dp .bottom{
+background-color: inherit;
+border-top:0 none;
+}
+}
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 17px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #555;
+  color: white;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+

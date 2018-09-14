@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>CODEX</title>
+
+
+
+	<meta name="viewport" content="width=device-width , initial-scale=1">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+
+	<!-- JS para pagina em geral -->
+	<script src="JavaScript/index.js"></script>
+
+	<!-- Css -->
+	<link rel="stylesheet" type="text/css" href="CSS/estilizacao.css">
+	
+<script type="text/javascript">
+$(document).ready(function(){
+	
+	var username = localStorage.getItem("username");
+	console.log(username);
+	
+	$("#boas").append("Bem vindo " + username);
+	
+$("#btnlogout").click(function () {
+    localStorage.clear();
+    window.location.href = "index.html";
+});
+});</script>
+</head>
+
+<body>
+
+	<div class="container">
+		<p class="round1" id="Descubra"></p>
+		<div class="customHr " style="margin-top:100px">.</div>
+
+		<div class="row">
+
+			<div class="jumbotron" style="background-color:rgb(255, 163, 102);color:#f5f5f0">
+				<h1>
+					CODEX
+				</h1>
+				<p>
+					Um Website pronto para resolver todos os teus problemas no contrução do teu código. <br>
+					Começa já a resolver os nossos exercícios e torna-te um profissional em programação!
+				</p>
+
+			</div>
+
+		</div>
+		<center>
+
+			<!-- Fim Modal -->
+
+		
+		</center>
+		<!-- NAVBAR -->
+		<nav id="mainNav" class="navbar navbar-default navbar-fixed-top" style="padding:10px;background-color:rgba(255,255,255,0.5)">
+			<div class="collapse navbar-collapse w3-container">
+
+				<ul class="nav navbar-nav" style="margin-left:30px">
+
+					<h1>
+						CODEX
+					</h1>
+
+
+
+				</ul>
+
+				<!-- Navegação -->
+				<ul class="nav navbar-nav navbar-right" style="margin-right:30px">
+		
+					<li>
+						<a class="page-scroll" href="Snippets.html">Exercícios</a>
+					</li>
+					<li>
+						<a class="page-scroll" href="Adiciona.html">Adicionar Exercícios</a>
+					</li>
+					
+					 <li class="dropdown">
+        				<a class="dropdown-toggle" data-toggle="dropdown" id="boas" href="#">
+        						<span class="caret"></span></a>
+        				<ul class="dropdown-menu">
+          							<li><a href="EditarPerfil.html">Editar Perfil</a></li>
+          							
+       					 </ul>
+      </li>
+      
+					 <li>
+                        <a id="btnlogout" class="page-scroll"  >Log out</a>
+                    </li>
+                    
+				</ul>
+			</div>
+		</nav>
+		<!-- Fim de navbar -->
+
+
+		<div class="customHr" id="sugest" style="margin-top:50px">.</div>
+
+		<div class="row">
+			<div class="col-md-4">
+
+				<img src="Images/HTML5_Logo.png" style="width:250px;height:240px  ">
+				<p style="margin-top:10px"> HTML é a sigla de HyperText Markup Language, expressão inglesa que significa "Linguagem de Marcação de Hipertexto". Consiste
+					numa linguagem de marcação utilizada para produção de páginas na web, que permite a criação de documentos que podem
+					ser lidos em praticamente qualquer tipo de computador e transmitidos pela internet.
+					<br>
+
+				</p>
+				<p>
+					<a class="btn" href="SnippetHTML.html" style="color:darkolivegreen">
+						<b>«Snippets HTML»</b>
+					</a>
+				</p>
+			</div>
+			<div class="col-md-4">
+
+				<img src="Images/js3.png" style="width:250px;height:240px  ">
+				<p style="margin-top:10px"> O JavaScript é uma linguagem de programação do lado cliente, ou seja, é processada pelo próprio navegador. Com o JavaScript
+					podemos criar efeitos especiais para nossas páginas na Web, além de podermos proporcionar uma maior interatividade com
+					nossos usuários. O JavaScript é uma linguagem orientada a objetos, ou seja, ela trata todos os elementos da página como
+					objetos distintos, fascilitando a tarefa da programação.
+
+				</p>
+				<p>
+					<a class="btn" href="SnippetJS.html" target="_blank" style="color:darkolivegreen ">
+						<b>«Snippets Javascript»</b>
+					</a>
+				</p>
+			</div>
+			<div class="col-md-4">
+
+				<img src="Images/php.png" style="width:250px;height:240px  ">
+				<p style="margin-top:10px"> O PHP é uma linguagem de script em que o código é normalmente embutido no próprio HTML. No caso do PHP, o código é executado
+					do lado do servidor e é enviado para o cliente apenas o resultando em HTML puro. Com isso é possível a interação com
+					banco de dados, outras aplicações e o código não fica exposto. PHP é a linguagem de programação web mais utilizada para
+					implementação de funções mais dinâmicas e complexas dentro de websites e aplicações Web.
+				</p>
+				<p>
+					<a class="btn" href="SnippetPHP.html" style="color: darkolivegreen ">
+						<b>«Snippets PHP»</b>
+					</a>
+				</p>
+			</div>
+		</div>
+		<br>
+		<br>
+		<div class="row">
+			<div class="col-md-4">
+
+				<img src="Images/css.png" style="width:180px;height:240px  ">
+				<p style="margin-top:10px">O CSS é utilizado em conjunto com o HTML. É uma linguagem utilizada para definição de estilos, para definir o layout
+					de documentos HTML. Enquanto o HTML é usado para estruturar conteúdos, o CSS é usado para formatar conteúdos estruturados.
+					<br>
+
+				</p>
+				<p>
+					<a class="btn" href="SnippetCSS.html" style="color:darkolivegreen">
+						<b>«Snippets CSS»</b>
+					</a>
+				</p>
+			</div>
+			<div class="col-md-4">
+
+				<img src="Images/java.png" style="width:250px;height:240px  ">
+				<p style="margin-top:10px">Java é uma linguagem de programação interpretada orientada a objetos desenvolvida na década de 90 por uma equipe de programadores
+					chefiada por James Gosling, na empresa Sun Microsystems. Diferente das linguagens de programação convencionais, que
+					são compiladas para código nativo, a linguagem Java é compilada para um bytecode que é interpretado por uma máquina
+					virtual (Java Virtual Machine, mais conhecida pela sua abreviação JVM).
+
+				</p>
+				<p>
+					<a class="btn" href="SnippetJAVA.html" target="_blank" style="color:darkolivegreen ">
+						<b>«Snippets Java»</b>
+					</a>
+				</p>
+			</div>
+			<div class="col-md-4">
+
+				<img src="Images/c.png" style="width:250px;height:240px  ">
+				<p style="margin-top:10px">C# é uma linguagem de programação interpretada, multi-paradigma, fortemente 'tipada', e, possuindo paradigmas de programação
+					imperativa, funcional, declarativa, orientada a objetos e genérica, C# foi desenvolvida pela Microsoft como parte da
+					plataforma .NET. A sua sintaxe orientada a objetos foi baseada no C++ mas inclui muitas influências de outras linguagens
+					de programação, como Object Pascal e, principalmente, Java.
+				</p>
+				<p>
+					<a class="btn" href="SnippetC#.html" style="color: darkolivegreen ">
+						<b>«Snippets C#»</b>
+					</a>
+				</p>
+			</div>
+		</div>
+
+
+
+</body>
+
+
+</html>

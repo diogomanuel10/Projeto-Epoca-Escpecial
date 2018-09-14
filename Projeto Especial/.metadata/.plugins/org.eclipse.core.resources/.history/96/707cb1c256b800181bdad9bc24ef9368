@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+    <title>CODEX</title>
+
+
+
+    <meta name="viewport" content="width=device-width , initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+
+    <!-- JS para pagina em geral -->
+    <script src="JavaScript/index.js"></script>
+
+    <!-- Css -->
+    <link rel="stylesheet" href="CSS/estilizacao.css">
+    <link rel="stylesheet" href="CSS/tabela.css">
+
+    <script>
+        $(document).ready(function () {
+            // Listar jogos	
+            var myToken;
+		if (localStorage.token == null) {
+			myToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiYWRtaW4iOnRydWV9.TJVA95OrM7E2cBab30RMHrHDcEfxjoYZgeFONFh7HgQ";
+		} else {
+			myToken = localStorage.token;
+		}
+
+            	var eliminar = "<button  id='eliminar'>Eliminar</button>";
+            	
+
+            var url = "http://localhost:8080/CODEX/rest/exercicios?dificuldade=Iniciante";
+            var jqxhr = $.get(url, function () {
+
+            })
+                .done(function (data) {
+                    $("#tblS").empty();
+
+		
+
+                    var trTemp = "";
+   
+                    trTemp += "<tr><th>Título</th><th>Descrição</th><th>Linguagem</th><th>Dificuldade</th><th>Autor</th><th>Solução</th></tr>";
+                    $("#tblS").append(trTemp);
+
+                    $.each(data, function (i, obj) {
+                       
+                            trTemp = "<tr><td class='customerIDCell'>" + obj.titulo + "</td><td>" +
+                                obj.exercicio + "</td><td>" +
+                                obj.solucao.linguagem + "</td><td>" +
+                                obj.dificuldade + "</td><td>" +
+                                obj.autores.username + "</td><td>" +
+                                obj.casoteste.output + "</td><tr>" 
+                                
+                                
+
+
+
+
+                            $("#tblS").append(trTemp);
+                        
+
+
+                    });
+
+                })
+                .fail(function () {
+                    alert("error");
+                });
+            
+            $("#btnlogout").click(function () {
+                localStorage.clear();
+                window.location.href = "index.html";
+            });
+            
+            	var username = localStorage.getItem("username");
+            	console.log(username);
+            	
+            	$("#boas").append("Bem vindo " + username);
+
+            	$("#btnL").click(function(){		
+            		var linguagem = $("#linguagem").val();
+            		
+            		
+            		var	url = "http://localhost:8080/CODEX/rest/exercicios?dificuldade=Iniciante&linguagem=" + linguagem;
+            		var jqxhr = $.get(url, function() {
+            			  
+            		})
+            		  .done(function(data) {
+            			  $("#tblS").empty();
+
+            				
+
+                          var trTemp = "";
+         
+                          trTemp += "<tr><th>Título</th><th>Descrição</th><th>Linguagem</th><th>Dificuldade</th><th>Autor</th><th>Solução</th></tr>";
+                          $("#tblS").append(trTemp);
+
+                          $.each(data, function (i, obj) {
+                             
+                                  trTemp = "<tr><td onclick= Click(obj.titulo)>" + obj.titulo + "</td><td>" +
+                                      obj.exercicio + "</td><td>" +
+                                      obj.solucao.linguagem + "</td><td>" +
+                                      obj.dificuldade + "</td><td>" +
+                                      obj.autores.username + "</td><td>" +
+                                      obj.casoteste.output + "</td><tr>";
+
+
+
+                                  $("#tblS").append(trTemp);
+                              
+            		    
+            		  })
+            		 
+            	});	
+
+        });
+            	
+            	$("#tblS").on("click", "tr", function() {
+            		
+            		function Click(titulo){
+            			console.log(titulo);
+            		}
+            		  /*$('#tblS .customerIDCell').each(function()
+               			   {
+               			     alert($(this).html());
+               			     console.log();
+               			   });*/
+            		  
+            		  
+            		
+            	    });
+            		        //get <td> element values here!!??
+            		    
+            		/*	var	url = "http://localhost:8080/CODEX/rest/exercicios?dificuldade=Iniciante"
+            		var jqxhr = $.get(url, function() {
+            			  
+            		})
+            		 .done(function(data) {
+            		
+            			$('#tblS tr').each(data,function(i,obj) {
+            				
+            		    var titulo = localStorage.setItem("titulo",obj.titulo);
+            		   var x = $(this).find(".customerIDCell").html();
+            		   console.log(x);
+            		    window.location.href = "Exercicio.html";
+            		    alert("Clicou!");
+            		 });
+            	     
+            	   });});*/
+            	   
+            	 
+            	
+            	// Remover jogo
+            	$("#btnE").click(function(){
+            		$.ajax({
+            			  method: "DELETE",
+            			  url: "http://localhost:8080/CODEX/rest/exercicios/" + $("#elimina").val(),
+            			  data: {
+                              token: myToken
+                          }
+            			})
+            			  .done(function( msg ) {
+            			    alert("Removido");
+            			    location.reload();
+            			  });
+            	}); 	
+        });
+    </script>
+</head>
+<body style="background-color: #ebebe0">
+   <div class="container">
+        <p class="round1" id="Descubra"></p>
+        <div class="customHr " style="margin-top: 100px">.</div>
+        <center>
+        <div class="row">
+            <h1 style="color:#ff751a">Exercícios para Iniciantes</h1>
+            <br>
+            <p> Nesta página podes encontrar os exercícios ideais para os inicantes! </p>
+            <br>
+			<p> Resolve-os e passa á próxima fase </p>
+        </div>
+    </center>
+        <!-- NAVBAR -->
+        <nav id="mainNav" class="navbar navbar-default navbar-fixed-top" style="padding:10px;background-color:rgba(255,255,255,0.5)">
+            <div class="collapse navbar-collapse w3-container">
+
+                <ul class="nav navbar-nav" style="margin-left:30px">
+                  
+                        <h1 style="color:#ff751a">
+                        <a href="homePage.html"> CODEX</a>
+                           
+                        </h1>
+
+                    
+
+                </ul>
+         
+                <!-- Navegação -->
+               	<ul class="nav navbar-nav navbar-right" style="margin-right:30px">
+					 <li class="dropdown">
+        				<a class="dropdown-toggle" data-toggle="dropdown"  href="#">Exercícios
+        						<span class="caret"></span></a>
+        				<ul class="dropdown-menu">
+          							<li><a href="ExFacil.html">Iniciante</a></li>
+          							<li><a href="ExIntermedia.html">Intermedia</a></li>
+          							<li><a href="ExDificil.html">Profissional</a></li>
+          							
+       					 </ul>
+      </li>
+		
+					
+					<li>
+						<a class="page-scroll" href="AdicionaExercicio.html">Adicionar Exercícios</a>
+					</li>
+					
+					 <li class="dropdown">
+        				<a class="dropdown-toggle" data-toggle="dropdown" id="boas" href="#">
+        						<span class="caret"></span></a>
+        				<ul class="dropdown-menu">
+          							<li><a href="EditarPerfil.html">Editar Perfil</a></li>
+          							
+       					 </ul>
+      </li>
+      
+      
+					 <li>
+                        <a id="btnlogout" class="page-scroll"  >Log out</a>
+                    </li>
+                    
+				</ul>
+            </div>
+        </nav>
+        <!-- Fim de navbar -->
+
+        
+        <div class="customHr" id="sugest" style="margin-top: 20px">.</div>
+
+		<div class="row">
+		<div class="col-md-12">
+			<div class="col-md-6">
+		<h4 style="text-align:left">Escolhe a tua Linguagem:</h4>
+		<br>
+			<select id="linguagem" name="linguagem">
+			<option value="HTML">HTML</option>
+			<option value="JavaScript">JavaScript</option>
+			<option value="Java">Java</option>
+			<option value="C#">C#</option>
+			<option value="C++">C++</option>
+		</select>
+		<button id="btnL">Filtrar</button>
+		</div>
+			<div class="col-md-6">
+		<h4 style="text-align:left">Queres eliminar o teu exercício?<h3>Escreve título e remove-o</h3></h4>
+		
+		<input id="elimina" type="text"/>
+		<button id="btnE">Eliminar</button>
+		</div>
+		</div>
+		</div>
+
+        <div class="row">
+            <div class="col-md-12">
+
+                <br>
+                <br>
+			
+                <table id="tblS" border="1" style="width:100%;font-family: arial, sans-serif;">
+                </table>
+
+            </div>
+            
+           
+        </div>
+
+</body>
+</html>

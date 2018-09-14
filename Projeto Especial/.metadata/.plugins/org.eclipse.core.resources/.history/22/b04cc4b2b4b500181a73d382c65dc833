@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Snippet</title>
+
+
+
+    <meta name="viewport" content="width=device-width , initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+
+    <!-- JS para pagina em geral -->
+    <script src="JavaScript/index.js"></script>
+
+    <!-- Css -->
+    <link rel="stylesheet" href="CSS/estilizacao.css">
+
+    <script>
+        $(document).ready(function () {
+            // Listar jogos	
+
+
+            var url = "http://localhost:8080/CODEX/rest/exercicios";
+            var jqxhr = $.get(url, function () {
+
+            })
+                .done(function (data) {
+                    $("#tblS").empty();
+
+
+
+                    var trTemp = "";
+                    trTemp += "<tr><th colspan='5'>Snippets HTML</th></tr>";
+                    trTemp += "<tr><th>Nome Snippet</th><th>Linguagem</th><th>Descrição</th><th>Conteudo</th><th>Autor</th></tr>";
+                    $("#tblS").append(trTemp);
+
+                    $.each(data, function (i, obj) {
+                       
+                            trTemp = "<tr><td>" + obj.nomeSnippet + "</td><td>" +
+                                obj.linguagem.nomeLinguagem + "</td><td>" +
+                                obj.atalho.descricao + "</td><td>" +
+                                obj.atalho.conteudo + "</td><td>" +
+                                obj.autor.name + "</td><tr>"
+
+                                ;
+
+
+
+                            $("#tblS").append(trTemp);
+                        
+
+
+                    });
+
+                })
+                .fail(function () {
+                    alert("error");
+                });
+
+
+        });
+    </script>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <p class="round1" id="Descubra"></p>
+        <div class="customHr " style="margin-top: 100px">.</div>
+        <center>
+        <div class="row">
+            <h2>Snippets</h2>
+
+        </div>
+    </center>
+        <!-- NAVBAR -->
+        <nav id="mainNav" class="navbar navbar-default navbar-fixed-top" style="padding:10px;background-color:rgba(255,255,255,0.5)">
+            <div class="collapse navbar-collapse w3-container">
+
+                <ul class="nav navbar-nav" ">
+                  
+                        <h1 href="Snippets.html">
+                            Snippet world
+                        </h1>
+
+                    
+
+                </ul>
+         
+                <!-- Navegação -->
+                <ul class="nav navbar-nav navbar-right">
+
+                    <li>
+                        <a class="page-scroll" href="Snippets.html">Snippets</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="AdicionaSnippet.html">Adicionar Snippets</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="EditarPerfil.html">Editar Perfil</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Fim de navbar -->
+
+        
+        <div class="customHr" id="sugest" style="margin-top: 50px">.</div>
+
+        <div class="row">
+            <div class="col-md-12">
+
+                <br>
+                <br>
+
+                <table id="tblS" border="1" style="width:100%;font-family: arial, sans-serif;">
+                </table>
+
+            </div>
+        </div>
+
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+{
+   
+        "users":[
+          {
+            "email" : "asdasdasd@hotmail.com",
+            "password" : "diogo10",
+            "username" : "JoãoSilva34",
+            "nome": "João"
+            },
+            {
+               "email" : "dio_mang11@hotmail.com",
+                "password" : "Diogo23",
+                "username" : "diogo1010",
+                "nome": "Diogo"
+            },
+            {
+               "email" : "dio_mang11@hotmail.com",
+                "password" : "Diogomessi",
+                "username" : "Diogo",
+                "nome": "Diogo"
+        }
+        ]
+}

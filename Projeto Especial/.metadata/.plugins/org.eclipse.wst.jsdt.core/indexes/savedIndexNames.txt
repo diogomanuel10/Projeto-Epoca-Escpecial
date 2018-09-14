@@ -1,0 +1,9 @@
+INDEX VERSION 1.4+C:\Users\debi_\Desktop\TSIW 3ºANO 2\Sistemas Dístribuidos\Projeto Especial\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+2307343431.index
+423561858.index
+4188714598.index
+1286049433.index
+1365399338.index
+1198329450.index
+2106281914.index
+843075232.index

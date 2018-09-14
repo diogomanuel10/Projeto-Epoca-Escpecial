@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+    <title>CODEXs</title>
+
+
+
+    <meta name="viewport" content="width=device-width , initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+
+    <!-- JS para pagina em geral -->
+    <script src="JavaScript/index.js"></script>
+
+    <!-- Css -->
+    <link rel="stylesheet" href="CSS/estilizacao.css">
+    <link rel="stylesheet" href="CSS/tabela.css">
+
+    <script>
+        $(document).ready(function () {
+            // Listar jogos	
+
+
+            var url = "http://localhost:8080/CODEX/rest/exercicios?dificuldade=Díficil";
+            var jqxhr = $.get(url, function () {
+
+            })
+                .done(function (data) {
+                    $("#tblS").empty();
+
+
+
+                    var trTemp = "";
+         
+                    trTemp += "<tr><th>Título</th><th>Descrição</th><th>Linguagem</th><th>Dificuldade</th><th>Autor</th><th>Tags</th><th>Data Criação</th></tr>";
+                    $("#tblS").append(trTemp);
+
+                    $.each(data, function (i, obj) {
+                       
+                            trTemp = "<tr><td>" + obj.titulo + "</td><td>" +
+                                obj.exercicio + "</td><td>" +
+                                obj.solucao.linguagem + "</td><td>" +
+                                obj.dificuldade + "</td><td>" +
+                                obj.autores.username + "</td><td>" +
+                                obj.tags + "</td><td>" +
+                                obj.datacriacao + "</td><tr>"
+
+                                ;
+
+
+
+                            $("#tblS").append(trTemp);
+                        
+
+
+                    });
+
+                })
+                .fail(function () {
+                    alert("error");
+                });
+            
+            $("#btnlogout").click(function () {
+                localStorage.clear();
+                window.location.href = "index.html";
+            });
+
+
+
+        });
+    </script>
+</head>
+<body>
+   <div class="container">
+        <p class="round1" id="Descubra"></p>
+        <div class="customHr " style="margin-top: 100px" >.</div>
+        <center>
+        <div class="row">
+            <h2>Exercícios para Iniciantes</h2>
+            <br>
+            <p> Nesta página podes encontrar os exercícios ideais para os inicantes! </p>
+            <br>
+			<p> Resolve-os e passa á próxima fase </p>
+			<br>
+			 
+        </div>
+    </center>
+        <!-- NAVBAR -->
+        <nav id="mainNav" class="navbar navbar-default navbar-fixed-top" style="padding:10px;background-color:rgba(255,255,255,0.5)">
+            <div class="collapse navbar-collapse w3-container">
+
+                <ul class="nav navbar-nav" ">
+                  
+                        <h1 href="homePage.html">
+                            CODEX
+                        </h1>
+
+                    
+
+                </ul>
+         
+                <!-- Navegação -->
+                <ul class="nav navbar-nav navbar-right" style="margin-right:30px">
+
+                    <li>
+                        <a class="page-scroll" href="Snippets.html">Exercícios</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="AdicionaSnippet.html">Adicionar Exercícios</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="EditarPerfil.html">Editar Perfil</a>
+                    </li>
+                    <li>
+                        <a id="btnlogout" class="page-scroll" href="" >Log out</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Fim de navbar -->
+
+        
+        <div class="customHr" id="sugest" style="margin-top: 50px">.</div>
+
+        <div class="row">
+            <div class="col-md-12">
+
+                <br>
+                <br>
+
+                <table id="tblS" border="1" style="width:100%;font-family: arial, sans-serif;">
+                </table>
+
+            </div>
+        </div>
+
+</body>
+</html>

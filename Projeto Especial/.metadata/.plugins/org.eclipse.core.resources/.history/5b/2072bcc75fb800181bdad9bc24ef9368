@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>CODEX</title>
+
+
+
+	<meta name="viewport" content="width=device-width , initial-scale=1">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+
+	
+
+	<!-- Css -->
+	<link rel="stylesheet" href="CSS/estilizacao.css">
+
+
+<script>
+	$(document)
+			.ready(
+					function() {
+						
+							var codigo;
+							var titulo = localStorage.getItem("titulo");
+		            		var	url = "http://localhost:8080/CODEX/rest/exercicios/" + titulo;
+		            		var jqxhr = $.get(url, function() {
+		            			  
+		            		})
+		            		  .done(function(data) {
+		            			 console.log(data);
+		            			 $("#T").append(data[0].titulo);
+		            			 $("#AEx").append(data[0].autores.username);
+		            			 $("#ExE").append(data[0].exercicio);
+		            			 $("#ExL").append(data[0].solucao.linguagem);
+		            			 $("#ExD").append(data[0].dificuldade);
+		            			 
+		            			 codigo = data[0].casoteste.input;
+		            			
+		 		       
+		            		  })
+		            		 
+		            	
+ 						 $("#btnV").click(function () {
+ 							 console.log("Entrei");
+		  							var userinput = $("ExC").val();
+		  							
+		 				               console.log(userinput,codigo);
+		 				            });
+
+
+						var myToken;
+						if (localStorage.token == null) {
+							myToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiYWRtaW4iOnRydWV9.TJVA95OrM7E2cBab30RMHrHDcEfxjoYZgeFONFh7HgQ";
+						} else {
+							myToken = localStorage.token;
+						}
+
+						
+						
+						
+						
+						console.log(username);
+						var username = localStorage.getItem("username");
+						$("#boas").append("Bem vindo " + username);
+						
+						
+						 $("#btnlogout").click(function () {
+				                localStorage.clear();
+				                window.location.href = "index.html";
+				            });
+						 
+						 $("#btnC").click(function(){
+							 localStorage.clear();
+							 window.location.href = "index.html";
+			            	}); 
+					});
+</script>
+
+</head>
+
+<body style="background-color: #ebebe0">
+
+	<div class="container">
+		<p class="round1" id="Descubra"></p>
+		<div class="customHr " style="margin-top:100px">.</div>
+
+		<div class="row">
+			<h1 style="color:#ff751a">
+				Resolve o Exercício
+				
+			</h1>
+			<h1 id="T"></h1>
+		</div>
+
+		<!-- NAVBAR -->
+		<nav id="mainNav" class="navbar navbar-default navbar-fixed-top" style="padding:10px;background-color:rgba(255,255,255,0.5)">
+			<div class="collapse navbar-collapse w3-container">
+
+				<ul class="nav navbar-nav" style="margin-left:30px">
+
+					<h1>
+						<a href="homePage.html"> CODEX</a>
+					</h1>
+
+
+
+				</ul>
+
+				<!-- Navegação -->
+					<ul class="nav navbar-nav navbar-right" style="margin-right:30px">
+					 <li class="dropdown">
+        				<a class="dropdown-toggle" data-toggle="dropdown"  href="#">Exercícios
+        						<span class="caret"></span></a>
+        				<ul class="dropdown-menu">
+          							<li><a href="ExFacil.html">Iniciante</a></li>
+          							<li><a href="ExIntermedia.html">Intermedia</a></li>
+          							<li><a href="ExDificil.html">Profissional</a></li>
+          							
+       					 </ul>
+      </li>
+		
+					
+					<li>
+						<a class="page-scroll" href="AdicionaExercicio.html">Adicionar Exercícios</a>
+					</li>
+					
+					 <li class="dropdown">
+        				<a class="dropdown-toggle" data-toggle="dropdown" id="boas" href="#">
+        						<span class="caret"></span></a>
+        				<ul class="dropdown-menu">
+          							<li><a href="EditarPerfil.html">Editar Perfil</a></li>
+          							
+       					 </ul>
+      </li>
+      
+      
+					 <li>
+                        <a id="btnlogout" class="page-scroll"  >Log out</a>
+                    </li>
+                    
+				</ul>
+			</div>
+		</nav>
+		<!-- Fim de navbar -->
+
+
+		<div class="customHr" id="sugest" style="margin-top:20px">.</div>
+
+		<div class="row">
+			<div class="col-md-12">
+				<div class="row" id="bigDiv">
+					<div class="row" id="snippetInfo">
+						<div class="col-md-12" id="snipBar">
+							<div class="row" id="snipList" style="margin-left: 10px; margin-right: 10px">
+								<form id="newSnipForm">
+									<div class='form-group'>
+										<div class="row">
+											<br>
+											<div class="col-md-12">
+											<div class="col-md-4">
+												<label for='AEx' class='sr-onl'>Autor:</label>
+												<p style="text-align:left" id='AEx'></p>
+											</div>
+											<div class="col-md-4">
+												<label for='ExD' class='sr-onl'>Dificuldade:</label>
+												<p style="text-align:left" id='ExD'></p>
+											</div>
+											<div class="col-md-4">
+												<label for='ExL' class='sr-onl'>Linguagem:</label>
+												<p style="text-align:left" id='ExL'></p>
+											</div>
+											</div>
+											
+											<div class="col-md-12">
+											<br><br>
+												<label for='ExE' class='sr-onl'>Exercício:</label>
+												<p style="text-align:left" id='ExE'></p>
+												
+											</div>
+											<div class="col-md-12">
+											<br><br>
+												<label for='ExC' class='sr-onl'>Insere aqui o teu código:</label>
+												<br>
+												<textarea id="ExC" rows="20" cols="50" placeholder="Resolve aqui o teu exercicio"></textarea>
+											</div>
+											<div class="col-md-12">
+											<br>
+											<button id="btnV" style=" width: 500px; background-color:#ff751a;color:#ebebe0" class='btn form-control'>Verificar</button>
+											</div>
+										</div>
+									</div>
+								
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+</body>
+
+</html>

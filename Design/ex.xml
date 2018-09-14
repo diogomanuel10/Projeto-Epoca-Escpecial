@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<exercises>
+    <exercise  datacriacao="10/08/2018 11:00">
+        <titulo>Criar um numero random inteiro</titulo>
+        
+            <users>
+                <user>
+                    <username>JoãoSilva34</username>
+                    <password>diogo10</password>
+                    <email>asdasdasd@hotmail.com</email>
+                    <name>João</name>
+                </user>
+            </users>
+            <exercicio>Write an algorithm to print 'Hello' and your name in a separate line.</exercicio>
+            <tags>
+                <tag>javascript</tag>
+            </tags>
+            <dificuldade>Iniciante</dificuldade>
+            <solutions>
+                <solution>
+                    <linguagem>JavaScript</linguagem>
+                   
+                </solution>
+            </solutions>
+            <casoteste>
+                   <input></input>
+                    <output>5</output>
+            </casoteste>
+        
+    </exercise>
+
+</exercises>

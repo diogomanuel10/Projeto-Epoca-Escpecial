@@ -1,0 +1,41 @@
+{
+  "exercicios": [
+    {
+      "autores" : {
+        "email" : "asdasdasd@hotmail.com",
+        "password" : "diogo10",
+        "username" : "JoãoSilva34"
+    },
+    "casoteste" : {
+        "input" : "tototoa",
+        "output" : "hello"
+    },
+    "datacriacao" : "2018/09/13 23:09:24",
+    "dificuldade" : "Iniciante",
+    "exercicio" : "asdasdasd",
+    "solucao" : {
+        "linguagem" : "Java"
+    },
+    "tags" : "java",
+    "titulo" : "Titulo"
+    },{ 
+        "autores" : {
+        "email" : "asdasdasd@hotmail.com",
+        "password" : "diogo10",
+        "username" : "JoãoSilva34"
+    },
+    "casoteste" : {
+        "input" : "adasd",
+        "output" : "hello"
+    },
+    "datacriacao" : "2018/09/14 11:11:43",
+    "dificuldade" : "Iniciante",
+    "exercicio" : "asdasd",
+    "solucao" : {
+        "linguagem" : "JavaScript"
+    },
+    "tags" : "javascript",
+    "titulo" : "Ex2"}
+   
+  ]
+}

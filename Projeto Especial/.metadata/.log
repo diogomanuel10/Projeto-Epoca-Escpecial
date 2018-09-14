@@ -1,0 +1,1595 @@
+!SESSION 2018-08-27 14:20:38.019 -----------------------------------------------
+eclipse.buildId=4.7.1.M20171009-0410
+java.version=1.8.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=pt_PT
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-08-27 14:21:37.576
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\debi_'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jst.j2ee 4 0 2018-08-27 14:25:57.752
+!MESSAGE Plugin org.eclipse.jst.jee, extension org.eclipse.jst.j2ee.J2EEModelProvider
+Version 8.0 of project facet jst.ear does not exist.
+
+!ENTRY org.eclipse.jst.j2ee 4 0 2018-08-27 14:25:57.824
+!MESSAGE Version 8.0 of project facet jst.ear does not exist.
+!STACK 0
+java.lang.IllegalArgumentException: Version 8.0 of project facet jst.ear does not exist.
+	at org.eclipse.wst.common.project.facet.core.util.internal.Versionable.getVersion(Versionable.java:80)
+	at org.eclipse.wst.common.project.facet.core.internal.ProjectFacet.getVersion(ProjectFacet.java:1)
+	at org.eclipse.jst.j2ee.model.J2EEModelProviderRegistry.readElement(J2EEModelProviderRegistry.java:85)
+	at org.eclipse.wst.common.core.util.RegistryReader.internalReadElement(RegistryReader.java:81)
+	at org.eclipse.wst.common.core.util.RegistryReader.readRegistry(RegistryReader.java:122)
+	at org.eclipse.jst.j2ee.model.J2EEModelProviderRegistry.getInstance(J2EEModelProviderRegistry.java:43)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.initProviders(ModelProviderManager.java:262)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getProviders(ModelProviderManager.java:338)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getProvider(ModelProviderManager.java:223)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getModelProvider(ModelProviderManager.java:93)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getModelProvider(ModelProviderManager.java:281)
+	at org.eclipse.jst.jee.ui.internal.navigator.JEE5ContentProvider.getCachedModelProvider(JEE5ContentProvider.java:76)
+	at org.eclipse.jst.jee.ui.internal.navigator.Web25ContentProvider.getNewContentProviderInstance(Web25ContentProvider.java:69)
+	at org.eclipse.jst.jee.ui.internal.navigator.LoadingJeeDDJob.run(LoadingJeeDDJob.java:50)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.jst.j2ee 4 0 2018-08-27 14:25:57.869
+!MESSAGE Plugin org.eclipse.jst.jee, extension org.eclipse.jst.j2ee.J2EEModelProvider
+Version 8.0 of project facet jst.appclient does not exist.
+
+!ENTRY org.eclipse.jst.j2ee 4 0 2018-08-27 14:25:57.899
+!MESSAGE Version 8.0 of project facet jst.appclient does not exist.
+!STACK 0
+java.lang.IllegalArgumentException: Version 8.0 of project facet jst.appclient does not exist.
+	at org.eclipse.wst.common.project.facet.core.util.internal.Versionable.getVersion(Versionable.java:80)
+	at org.eclipse.wst.common.project.facet.core.internal.ProjectFacet.getVersion(ProjectFacet.java:1)
+	at org.eclipse.jst.j2ee.model.J2EEModelProviderRegistry.readElement(J2EEModelProviderRegistry.java:85)
+	at org.eclipse.wst.common.core.util.RegistryReader.internalReadElement(RegistryReader.java:81)
+	at org.eclipse.wst.common.core.util.RegistryReader.readRegistry(RegistryReader.java:122)
+	at org.eclipse.jst.j2ee.model.J2EEModelProviderRegistry.getInstance(J2EEModelProviderRegistry.java:43)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.initProviders(ModelProviderManager.java:262)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getProviders(ModelProviderManager.java:338)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getProvider(ModelProviderManager.java:223)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getModelProvider(ModelProviderManager.java:93)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getModelProvider(ModelProviderManager.java:281)
+	at org.eclipse.jst.jee.ui.internal.navigator.JEE5ContentProvider.getCachedModelProvider(JEE5ContentProvider.java:76)
+	at org.eclipse.jst.jee.ui.internal.navigator.Web25ContentProvider.getNewContentProviderInstance(Web25ContentProvider.java:69)
+	at org.eclipse.jst.jee.ui.internal.navigator.LoadingJeeDDJob.run(LoadingJeeDDJob.java:50)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.jface.text 2 0 2018-08-27 14:45:12.850
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-08-27 14:45:12.855
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-08-27 14:45:12.953
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-08-27 14:45:12.961
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2018-08-27 14:46:23.163
+!MESSAGE The Tomcat server configuration at \Servers\Tomcat v8.5 Server at localhost-config is missing. Check the server for errors.
+!SESSION 2018-09-03 15:21:16.697 -----------------------------------------------
+eclipse.buildId=4.7.1.M20171009-0410
+java.version=1.8.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=pt_PT
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-09-03 15:24:53.023
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\debi_'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jst.j2ee 4 0 2018-09-03 15:26:54.631
+!MESSAGE Plugin org.eclipse.jst.jee, extension org.eclipse.jst.j2ee.J2EEModelProvider
+Version 8.0 of project facet jst.ear does not exist.
+
+!ENTRY org.eclipse.jst.j2ee 4 0 2018-09-03 15:26:54.760
+!MESSAGE Version 8.0 of project facet jst.ear does not exist.
+!STACK 0
+java.lang.IllegalArgumentException: Version 8.0 of project facet jst.ear does not exist.
+	at org.eclipse.wst.common.project.facet.core.util.internal.Versionable.getVersion(Versionable.java:80)
+	at org.eclipse.wst.common.project.facet.core.internal.ProjectFacet.getVersion(ProjectFacet.java:1)
+	at org.eclipse.jst.j2ee.model.J2EEModelProviderRegistry.readElement(J2EEModelProviderRegistry.java:85)
+	at org.eclipse.wst.common.core.util.RegistryReader.internalReadElement(RegistryReader.java:81)
+	at org.eclipse.wst.common.core.util.RegistryReader.readRegistry(RegistryReader.java:122)
+	at org.eclipse.jst.j2ee.model.J2EEModelProviderRegistry.getInstance(J2EEModelProviderRegistry.java:43)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.initProviders(ModelProviderManager.java:262)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getProviders(ModelProviderManager.java:338)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getProvider(ModelProviderManager.java:223)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getModelProvider(ModelProviderManager.java:93)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getModelProvider(ModelProviderManager.java:281)
+	at org.eclipse.jst.jee.ui.internal.navigator.JEE5ContentProvider.getCachedModelProvider(JEE5ContentProvider.java:76)
+	at org.eclipse.jst.jee.ui.internal.navigator.Web25ContentProvider.getNewContentProviderInstance(Web25ContentProvider.java:69)
+	at org.eclipse.jst.jee.ui.internal.navigator.LoadingJeeDDJob.run(LoadingJeeDDJob.java:50)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.jst.j2ee 4 0 2018-09-03 15:26:54.817
+!MESSAGE Plugin org.eclipse.jst.jee, extension org.eclipse.jst.j2ee.J2EEModelProvider
+Version 8.0 of project facet jst.appclient does not exist.
+
+!ENTRY org.eclipse.jst.j2ee 4 0 2018-09-03 15:26:54.823
+!MESSAGE Version 8.0 of project facet jst.appclient does not exist.
+!STACK 0
+java.lang.IllegalArgumentException: Version 8.0 of project facet jst.appclient does not exist.
+	at org.eclipse.wst.common.project.facet.core.util.internal.Versionable.getVersion(Versionable.java:80)
+	at org.eclipse.wst.common.project.facet.core.internal.ProjectFacet.getVersion(ProjectFacet.java:1)
+	at org.eclipse.jst.j2ee.model.J2EEModelProviderRegistry.readElement(J2EEModelProviderRegistry.java:85)
+	at org.eclipse.wst.common.core.util.RegistryReader.internalReadElement(RegistryReader.java:81)
+	at org.eclipse.wst.common.core.util.RegistryReader.readRegistry(RegistryReader.java:122)
+	at org.eclipse.jst.j2ee.model.J2EEModelProviderRegistry.getInstance(J2EEModelProviderRegistry.java:43)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.initProviders(ModelProviderManager.java:262)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getProviders(ModelProviderManager.java:338)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getProvider(ModelProviderManager.java:223)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getModelProvider(ModelProviderManager.java:93)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getModelProvider(ModelProviderManager.java:281)
+	at org.eclipse.jst.jee.ui.internal.navigator.JEE5ContentProvider.getCachedModelProvider(JEE5ContentProvider.java:76)
+	at org.eclipse.jst.jee.ui.internal.navigator.Web25ContentProvider.getNewContentProviderInstance(Web25ContentProvider.java:69)
+	at org.eclipse.jst.jee.ui.internal.navigator.LoadingJeeDDJob.run(LoadingJeeDDJob.java:50)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.jface.text 2 0 2018-09-03 15:29:17.809
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-09-03 15:29:17.836
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-09-03 15:49:54.458
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-09-03 15:49:54.479
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-09-03 16:09:42.140
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-09-03 16:09:42.160
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2018-09-03 16:10:16.527
+!MESSAGE The Tomcat server configuration at \Servers\Tomcat v8.5 Server at localhost-config is missing. Check the server for errors.
+
+!ENTRY org.eclipse.wst.server.discovery 1 0 2018-09-03 16:10:32.047
+!MESSAGE already installed: org.eclipse.jst.server.generic.jonas4
+!SESSION 2018-09-04 14:24:46.387 -----------------------------------------------
+eclipse.buildId=4.7.1.M20171009-0410
+java.version=1.8.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=pt_PT
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-09-04 14:26:14.924
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\debi_'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jst.j2ee 4 0 2018-09-04 14:29:41.848
+!MESSAGE Plugin org.eclipse.jst.jee, extension org.eclipse.jst.j2ee.J2EEModelProvider
+Version 8.0 of project facet jst.ear does not exist.
+
+!ENTRY org.eclipse.jst.j2ee 4 0 2018-09-04 14:29:41.965
+!MESSAGE Version 8.0 of project facet jst.ear does not exist.
+!STACK 0
+java.lang.IllegalArgumentException: Version 8.0 of project facet jst.ear does not exist.
+	at org.eclipse.wst.common.project.facet.core.util.internal.Versionable.getVersion(Versionable.java:80)
+	at org.eclipse.wst.common.project.facet.core.internal.ProjectFacet.getVersion(ProjectFacet.java:1)
+	at org.eclipse.jst.j2ee.model.J2EEModelProviderRegistry.readElement(J2EEModelProviderRegistry.java:85)
+	at org.eclipse.wst.common.core.util.RegistryReader.internalReadElement(RegistryReader.java:81)
+	at org.eclipse.wst.common.core.util.RegistryReader.readRegistry(RegistryReader.java:122)
+	at org.eclipse.jst.j2ee.model.J2EEModelProviderRegistry.getInstance(J2EEModelProviderRegistry.java:43)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.initProviders(ModelProviderManager.java:262)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getProviders(ModelProviderManager.java:338)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getProvider(ModelProviderManager.java:223)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getModelProvider(ModelProviderManager.java:93)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getModelProvider(ModelProviderManager.java:281)
+	at org.eclipse.jst.jee.ui.internal.navigator.JEE5ContentProvider.getCachedModelProvider(JEE5ContentProvider.java:76)
+	at org.eclipse.jst.jee.ui.internal.navigator.Web25ContentProvider.getNewContentProviderInstance(Web25ContentProvider.java:69)
+	at org.eclipse.jst.jee.ui.internal.navigator.LoadingJeeDDJob.run(LoadingJeeDDJob.java:50)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.jst.j2ee 4 0 2018-09-04 14:29:42.024
+!MESSAGE Plugin org.eclipse.jst.jee, extension org.eclipse.jst.j2ee.J2EEModelProvider
+Version 8.0 of project facet jst.appclient does not exist.
+
+!ENTRY org.eclipse.jst.j2ee 4 0 2018-09-04 14:29:42.031
+!MESSAGE Version 8.0 of project facet jst.appclient does not exist.
+!STACK 0
+java.lang.IllegalArgumentException: Version 8.0 of project facet jst.appclient does not exist.
+	at org.eclipse.wst.common.project.facet.core.util.internal.Versionable.getVersion(Versionable.java:80)
+	at org.eclipse.wst.common.project.facet.core.internal.ProjectFacet.getVersion(ProjectFacet.java:1)
+	at org.eclipse.jst.j2ee.model.J2EEModelProviderRegistry.readElement(J2EEModelProviderRegistry.java:85)
+	at org.eclipse.wst.common.core.util.RegistryReader.internalReadElement(RegistryReader.java:81)
+	at org.eclipse.wst.common.core.util.RegistryReader.readRegistry(RegistryReader.java:122)
+	at org.eclipse.jst.j2ee.model.J2EEModelProviderRegistry.getInstance(J2EEModelProviderRegistry.java:43)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.initProviders(ModelProviderManager.java:262)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getProviders(ModelProviderManager.java:338)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getProvider(ModelProviderManager.java:223)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getModelProvider(ModelProviderManager.java:93)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getModelProvider(ModelProviderManager.java:281)
+	at org.eclipse.jst.jee.ui.internal.navigator.JEE5ContentProvider.getCachedModelProvider(JEE5ContentProvider.java:76)
+	at org.eclipse.jst.jee.ui.internal.navigator.Web25ContentProvider.getNewContentProviderInstance(Web25ContentProvider.java:69)
+	at org.eclipse.jst.jee.ui.internal.navigator.LoadingJeeDDJob.run(LoadingJeeDDJob.java:50)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.jface.text 2 0 2018-09-04 15:06:39.865
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-09-04 15:06:39.888
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+!SESSION 2018-09-07 14:13:48.283 -----------------------------------------------
+eclipse.buildId=4.7.1.M20171009-0410
+java.version=1.8.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=pt_PT
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-09-07 14:15:29.058
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\debi_'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jst.j2ee 4 0 2018-09-07 14:18:13.308
+!MESSAGE Plugin org.eclipse.jst.jee, extension org.eclipse.jst.j2ee.J2EEModelProvider
+Version 8.0 of project facet jst.ear does not exist.
+
+!ENTRY org.eclipse.jst.j2ee 4 0 2018-09-07 14:18:13.444
+!MESSAGE Version 8.0 of project facet jst.ear does not exist.
+!STACK 0
+java.lang.IllegalArgumentException: Version 8.0 of project facet jst.ear does not exist.
+	at org.eclipse.wst.common.project.facet.core.util.internal.Versionable.getVersion(Versionable.java:80)
+	at org.eclipse.wst.common.project.facet.core.internal.ProjectFacet.getVersion(ProjectFacet.java:1)
+	at org.eclipse.jst.j2ee.model.J2EEModelProviderRegistry.readElement(J2EEModelProviderRegistry.java:85)
+	at org.eclipse.wst.common.core.util.RegistryReader.internalReadElement(RegistryReader.java:81)
+	at org.eclipse.wst.common.core.util.RegistryReader.readRegistry(RegistryReader.java:122)
+	at org.eclipse.jst.j2ee.model.J2EEModelProviderRegistry.getInstance(J2EEModelProviderRegistry.java:43)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.initProviders(ModelProviderManager.java:262)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getProviders(ModelProviderManager.java:338)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getProvider(ModelProviderManager.java:223)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getModelProvider(ModelProviderManager.java:93)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getModelProvider(ModelProviderManager.java:281)
+	at org.eclipse.jst.jee.ui.internal.navigator.JEE5ContentProvider.getCachedModelProvider(JEE5ContentProvider.java:76)
+	at org.eclipse.jst.jee.ui.internal.navigator.Web25ContentProvider.getNewContentProviderInstance(Web25ContentProvider.java:69)
+	at org.eclipse.jst.jee.ui.internal.navigator.LoadingJeeDDJob.run(LoadingJeeDDJob.java:50)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.jst.j2ee 4 0 2018-09-07 14:18:13.556
+!MESSAGE Plugin org.eclipse.jst.jee, extension org.eclipse.jst.j2ee.J2EEModelProvider
+Version 8.0 of project facet jst.appclient does not exist.
+
+!ENTRY org.eclipse.jst.j2ee 4 0 2018-09-07 14:18:13.561
+!MESSAGE Version 8.0 of project facet jst.appclient does not exist.
+!STACK 0
+java.lang.IllegalArgumentException: Version 8.0 of project facet jst.appclient does not exist.
+	at org.eclipse.wst.common.project.facet.core.util.internal.Versionable.getVersion(Versionable.java:80)
+	at org.eclipse.wst.common.project.facet.core.internal.ProjectFacet.getVersion(ProjectFacet.java:1)
+	at org.eclipse.jst.j2ee.model.J2EEModelProviderRegistry.readElement(J2EEModelProviderRegistry.java:85)
+	at org.eclipse.wst.common.core.util.RegistryReader.internalReadElement(RegistryReader.java:81)
+	at org.eclipse.wst.common.core.util.RegistryReader.readRegistry(RegistryReader.java:122)
+	at org.eclipse.jst.j2ee.model.J2EEModelProviderRegistry.getInstance(J2EEModelProviderRegistry.java:43)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.initProviders(ModelProviderManager.java:262)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getProviders(ModelProviderManager.java:338)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getProvider(ModelProviderManager.java:223)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getModelProvider(ModelProviderManager.java:93)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getModelProvider(ModelProviderManager.java:281)
+	at org.eclipse.jst.jee.ui.internal.navigator.JEE5ContentProvider.getCachedModelProvider(JEE5ContentProvider.java:76)
+	at org.eclipse.jst.jee.ui.internal.navigator.Web25ContentProvider.getNewContentProviderInstance(Web25ContentProvider.java:69)
+	at org.eclipse.jst.jee.ui.internal.navigator.LoadingJeeDDJob.run(LoadingJeeDDJob.java:50)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.jface.text 2 0 2018-09-07 14:19:02.069
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-09-07 14:19:02.094
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+!SESSION 2018-09-07 16:19:21.895 -----------------------------------------------
+eclipse.buildId=4.7.1.M20171009-0410
+java.version=1.8.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=pt_PT
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-09-07 16:20:07.200
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\debi_'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.ui 4 0 2018-09-07 16:20:11.870
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.e4.core.di.InjectionException: java.lang.IllegalStateException: Application does not have an active window
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:65)
+	at org.eclipse.e4.ui.internal.di.UIEventObjectSupplier$UIEventHandler$1.run(UIEventObjectSupplier.java:64)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:233)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:144)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4889)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:212)
+	at org.eclipse.e4.ui.internal.di.UIEventObjectSupplier$UIEventHandler.handleEvent(UIEventObjectSupplier.java:61)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:201)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:197)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:135)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:78)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:39)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:52)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:60)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:374)
+	at org.eclipse.emf.ecore.util.EcoreEList.dispatchNotification(EcoreEList.java:249)
+	at org.eclipse.emf.common.notify.impl.NotifyingListImpl.remove(NotifyingListImpl.java:725)
+	at org.eclipse.emf.common.util.AbstractEList.remove(AbstractEList.java:464)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.subscribeTopicToBeRendered(PartRenderingEngine.java:176)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	at org.eclipse.e4.core.di.internal.extensions.EventObjectSupplier$DIEventHandler.handleEvent(EventObjectSupplier.java:88)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:201)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:197)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:135)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:78)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:39)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:52)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:60)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:374)
+	at org.eclipse.e4.ui.model.application.ui.impl.UIElementImpl.setToBeRendered(UIElementImpl.java:303)
+	at org.eclipse.e4.ui.workbench.addons.cleanupaddon.CleanupAddon$2.run(CleanupAddon.java:337)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:37)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:182)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4213)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3820)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:818)
+	at org.eclipse.jface.window.Window.open(Window.java:794)
+	at org.eclipse.ui.internal.handlers.WizardHandler$New.executeHandler(WizardHandler.java:269)
+	at org.eclipse.ui.internal.handlers.WizardHandler.execute(WizardHandler.java:290)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:291)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:92)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:305)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:239)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:132)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:152)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:494)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:487)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:210)
+	at org.eclipse.ui.internal.handlers.LegacyHandlerService.executeCommand(LegacyHandlerService.java:390)
+	at org.eclipse.ui.internal.actions.CommandAction.runWithEvent(CommandAction.java:151)
+	at org.eclipse.ui.internal.actions.CommandAction.run(CommandAction.java:161)
+	at org.eclipse.ui.actions.NewWizardDropDownAction.run(NewWizardDropDownAction.java:175)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:473)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:565)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$5(ActionContributionItem.java:436)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4428)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1079)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4238)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3817)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1150)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1039)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:680)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:594)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:151)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1499)
+Caused by: java.lang.IllegalStateException: Application does not have an active window
+	at org.eclipse.e4.ui.internal.workbench.ApplicationPartServiceImpl.getActiveWindowService(ApplicationPartServiceImpl.java:46)
+	at org.eclipse.e4.ui.internal.workbench.ApplicationPartServiceImpl.requestActivation(ApplicationPartServiceImpl.java:90)
+	at org.eclipse.e4.ui.internal.workbench.ApplicationPartServiceImpl.requestActivation(ApplicationPartServiceImpl.java:90)
+	at org.eclipse.e4.ui.workbench.addons.minmax.MinMaxAddon.unzoom(MinMaxAddon.java:902)
+	at org.eclipse.e4.ui.workbench.addons.minmax.MinMaxAddon.subscribeTopicTagsChanged(MinMaxAddon.java:393)
+	at sun.reflect.GeneratedMethodAccessor23.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	... 95 more
+
+!ENTRY org.eclipse.jst.j2ee 4 0 2018-09-07 16:20:17.861
+!MESSAGE Plugin org.eclipse.jst.jee, extension org.eclipse.jst.j2ee.J2EEModelProvider
+Version 8.0 of project facet jst.ear does not exist.
+
+!ENTRY org.eclipse.jst.j2ee 4 0 2018-09-07 16:20:17.985
+!MESSAGE Version 8.0 of project facet jst.ear does not exist.
+!STACK 0
+java.lang.IllegalArgumentException: Version 8.0 of project facet jst.ear does not exist.
+	at org.eclipse.wst.common.project.facet.core.util.internal.Versionable.getVersion(Versionable.java:80)
+	at org.eclipse.wst.common.project.facet.core.internal.ProjectFacet.getVersion(ProjectFacet.java:1)
+	at org.eclipse.jst.j2ee.model.J2EEModelProviderRegistry.readElement(J2EEModelProviderRegistry.java:85)
+	at org.eclipse.wst.common.core.util.RegistryReader.internalReadElement(RegistryReader.java:81)
+	at org.eclipse.wst.common.core.util.RegistryReader.readRegistry(RegistryReader.java:122)
+	at org.eclipse.jst.j2ee.model.J2EEModelProviderRegistry.getInstance(J2EEModelProviderRegistry.java:43)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.initProviders(ModelProviderManager.java:262)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getProviders(ModelProviderManager.java:338)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getProvider(ModelProviderManager.java:223)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getModelProvider(ModelProviderManager.java:93)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getModelProvider(ModelProviderManager.java:281)
+	at org.eclipse.jst.jee.ui.internal.navigator.JEE5ContentProvider.getCachedModelProvider(JEE5ContentProvider.java:76)
+	at org.eclipse.jst.jee.ui.internal.navigator.Web25ContentProvider.getNewContentProviderInstance(Web25ContentProvider.java:69)
+	at org.eclipse.jst.jee.ui.internal.navigator.LoadingJeeDDJob.run(LoadingJeeDDJob.java:50)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.jst.j2ee 4 0 2018-09-07 16:20:18.060
+!MESSAGE Plugin org.eclipse.jst.jee, extension org.eclipse.jst.j2ee.J2EEModelProvider
+Version 8.0 of project facet jst.appclient does not exist.
+
+!ENTRY org.eclipse.jst.j2ee 4 0 2018-09-07 16:20:18.137
+!MESSAGE Version 8.0 of project facet jst.appclient does not exist.
+!STACK 0
+java.lang.IllegalArgumentException: Version 8.0 of project facet jst.appclient does not exist.
+	at org.eclipse.wst.common.project.facet.core.util.internal.Versionable.getVersion(Versionable.java:80)
+	at org.eclipse.wst.common.project.facet.core.internal.ProjectFacet.getVersion(ProjectFacet.java:1)
+	at org.eclipse.jst.j2ee.model.J2EEModelProviderRegistry.readElement(J2EEModelProviderRegistry.java:85)
+	at org.eclipse.wst.common.core.util.RegistryReader.internalReadElement(RegistryReader.java:81)
+	at org.eclipse.wst.common.core.util.RegistryReader.readRegistry(RegistryReader.java:122)
+	at org.eclipse.jst.j2ee.model.J2EEModelProviderRegistry.getInstance(J2EEModelProviderRegistry.java:43)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.initProviders(ModelProviderManager.java:262)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getProviders(ModelProviderManager.java:338)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getProvider(ModelProviderManager.java:223)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getModelProvider(ModelProviderManager.java:93)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getModelProvider(ModelProviderManager.java:281)
+	at org.eclipse.jst.jee.ui.internal.navigator.JEE5ContentProvider.getCachedModelProvider(JEE5ContentProvider.java:76)
+	at org.eclipse.jst.jee.ui.internal.navigator.Web25ContentProvider.getNewContentProviderInstance(Web25ContentProvider.java:69)
+	at org.eclipse.jst.jee.ui.internal.navigator.LoadingJeeDDJob.run(LoadingJeeDDJob.java:50)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.jface.text 2 0 2018-09-07 16:30:47.124
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-09-07 16:30:47.160
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-09-07 16:46:18.110
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-09-07 16:46:18.132
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+!SESSION 2018-09-10 12:28:15.522 -----------------------------------------------
+eclipse.buildId=4.7.1.M20171009-0410
+java.version=1.8.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=pt_PT
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-09-10 12:29:23.766
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\debi_'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jst.j2ee 4 0 2018-09-10 12:29:42.350
+!MESSAGE Plugin org.eclipse.jst.jee, extension org.eclipse.jst.j2ee.J2EEModelProvider
+Version 8.0 of project facet jst.ear does not exist.
+
+!ENTRY org.eclipse.jst.j2ee 4 0 2018-09-10 12:29:42.446
+!MESSAGE Version 8.0 of project facet jst.ear does not exist.
+!STACK 0
+java.lang.IllegalArgumentException: Version 8.0 of project facet jst.ear does not exist.
+	at org.eclipse.wst.common.project.facet.core.util.internal.Versionable.getVersion(Versionable.java:80)
+	at org.eclipse.wst.common.project.facet.core.internal.ProjectFacet.getVersion(ProjectFacet.java:1)
+	at org.eclipse.jst.j2ee.model.J2EEModelProviderRegistry.readElement(J2EEModelProviderRegistry.java:85)
+	at org.eclipse.wst.common.core.util.RegistryReader.internalReadElement(RegistryReader.java:81)
+	at org.eclipse.wst.common.core.util.RegistryReader.readRegistry(RegistryReader.java:122)
+	at org.eclipse.jst.j2ee.model.J2EEModelProviderRegistry.getInstance(J2EEModelProviderRegistry.java:43)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.initProviders(ModelProviderManager.java:262)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getProviders(ModelProviderManager.java:338)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getProvider(ModelProviderManager.java:223)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getModelProvider(ModelProviderManager.java:93)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getModelProvider(ModelProviderManager.java:281)
+	at org.eclipse.jst.jee.ui.internal.navigator.JEE5ContentProvider.getCachedModelProvider(JEE5ContentProvider.java:76)
+	at org.eclipse.jst.jee.ui.internal.navigator.Web25ContentProvider.getNewContentProviderInstance(Web25ContentProvider.java:69)
+	at org.eclipse.jst.jee.ui.internal.navigator.LoadingJeeDDJob.run(LoadingJeeDDJob.java:50)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.jst.j2ee 4 0 2018-09-10 12:29:42.524
+!MESSAGE Plugin org.eclipse.jst.jee, extension org.eclipse.jst.j2ee.J2EEModelProvider
+Version 8.0 of project facet jst.appclient does not exist.
+
+!ENTRY org.eclipse.jst.j2ee 4 0 2018-09-10 12:29:42.531
+!MESSAGE Version 8.0 of project facet jst.appclient does not exist.
+!STACK 0
+java.lang.IllegalArgumentException: Version 8.0 of project facet jst.appclient does not exist.
+	at org.eclipse.wst.common.project.facet.core.util.internal.Versionable.getVersion(Versionable.java:80)
+	at org.eclipse.wst.common.project.facet.core.internal.ProjectFacet.getVersion(ProjectFacet.java:1)
+	at org.eclipse.jst.j2ee.model.J2EEModelProviderRegistry.readElement(J2EEModelProviderRegistry.java:85)
+	at org.eclipse.wst.common.core.util.RegistryReader.internalReadElement(RegistryReader.java:81)
+	at org.eclipse.wst.common.core.util.RegistryReader.readRegistry(RegistryReader.java:122)
+	at org.eclipse.jst.j2ee.model.J2EEModelProviderRegistry.getInstance(J2EEModelProviderRegistry.java:43)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.initProviders(ModelProviderManager.java:262)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getProviders(ModelProviderManager.java:338)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getProvider(ModelProviderManager.java:223)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getModelProvider(ModelProviderManager.java:93)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getModelProvider(ModelProviderManager.java:281)
+	at org.eclipse.jst.jee.ui.internal.navigator.JEE5ContentProvider.getCachedModelProvider(JEE5ContentProvider.java:76)
+	at org.eclipse.jst.jee.ui.internal.navigator.Web25ContentProvider.getNewContentProviderInstance(Web25ContentProvider.java:69)
+	at org.eclipse.jst.jee.ui.internal.navigator.LoadingJeeDDJob.run(LoadingJeeDDJob.java:50)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2018-09-10 12:38:05.125
+!MESSAGE Several ports (8080, 8009) required by Tomcat v8.5 Server at localhost are already in use. The server may already be running in another process, or a system process may be using the port. To start this server you will need to stop the other process or change the port number(s).
+
+!ENTRY org.eclipse.wst.server.core 4 0 2018-09-10 12:39:23.489
+!MESSAGE Server Tomcat v8.5 Server at localhost was unable to start within 45 seconds. If the server requires more time, try increasing the timeout in the server editor.
+
+!ENTRY org.eclipse.wst.server.core 4 0 2018-09-10 12:40:39.419
+!MESSAGE Server Tomcat v8.5 Server at localhost was unable to start within 45 seconds. If the server requires more time, try increasing the timeout in the server editor.
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2018-09-10 12:40:57.007
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.eclipse.e4.core.di.InjectionException: java.util.concurrent.TimeoutException: Timed out waiting for org.eclipse.epp.logging.aeri.ide.server ServerConnection [STOPPING] to reach a terminal state. Current state: STOPPING
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:65)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:990)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.disposed(InjectorImpl.java:450)
+	at org.eclipse.e4.core.internal.di.Requestor.disposed(Requestor.java:156)
+	at org.eclipse.e4.core.internal.contexts.ContextObjectSupplier$ContextInjectionListener.update(ContextObjectSupplier.java:78)
+	at org.eclipse.e4.core.internal.contexts.TrackableComputationExt.update(TrackableComputationExt.java:111)
+	at org.eclipse.e4.core.internal.contexts.TrackableComputationExt.handleInvalid(TrackableComputationExt.java:74)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.dispose(EclipseContext.java:178)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.dispose(EclipseContext.java:163)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.dispose(EclipseContext.java:163)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.dispose(EclipseContext.java:163)
+	at org.eclipse.e4.core.internal.contexts.osgi.EclipseContextOSGi.dispose(EclipseContextOSGi.java:99)
+	at org.eclipse.e4.core.internal.contexts.osgi.EclipseContextOSGi.bundleChanged(EclipseContextOSGi.java:141)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.dispatchEvent(BundleContextImpl.java:908)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148)
+	at org.eclipse.osgi.internal.framework.EquinoxEventPublisher.publishBundleEventPrivileged(EquinoxEventPublisher.java:213)
+	at org.eclipse.osgi.internal.framework.EquinoxEventPublisher.publishBundleEvent(EquinoxEventPublisher.java:120)
+	at org.eclipse.osgi.internal.framework.EquinoxEventPublisher.publishBundleEvent(EquinoxEventPublisher.java:112)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor.publishModuleEvent(EquinoxContainerAdaptor.java:168)
+	at org.eclipse.osgi.container.Module.publishEvent(Module.java:476)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:634)
+	at org.eclipse.osgi.container.Module.stop(Module.java:498)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:202)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:165)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.util.concurrent.TimeoutException: Timed out waiting for org.eclipse.epp.logging.aeri.ide.server ServerConnection [STOPPING] to reach a terminal state. Current state: STOPPING
+	at com.google.common.util.concurrent.AbstractService.awaitTerminated(AbstractService.java:317)
+	at com.google.common.util.concurrent.AbstractIdleService.awaitTerminated(AbstractIdleService.java:199)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.diStop(ServerConnection.java:392)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	... 25 more
+!SESSION 2018-09-10 12:41:46.393 -----------------------------------------------
+eclipse.buildId=4.7.1.M20171009-0410
+java.version=1.8.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=pt_PT
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-09-10 12:42:56.847
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\debi_'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jst.j2ee 4 0 2018-09-10 12:43:07.959
+!MESSAGE Plugin org.eclipse.jst.jee, extension org.eclipse.jst.j2ee.J2EEModelProvider
+Version 8.0 of project facet jst.ear does not exist.
+
+!ENTRY org.eclipse.jst.j2ee 4 0 2018-09-10 12:43:08.026
+!MESSAGE Version 8.0 of project facet jst.ear does not exist.
+!STACK 0
+java.lang.IllegalArgumentException: Version 8.0 of project facet jst.ear does not exist.
+	at org.eclipse.wst.common.project.facet.core.util.internal.Versionable.getVersion(Versionable.java:80)
+	at org.eclipse.wst.common.project.facet.core.internal.ProjectFacet.getVersion(ProjectFacet.java:1)
+	at org.eclipse.jst.j2ee.model.J2EEModelProviderRegistry.readElement(J2EEModelProviderRegistry.java:85)
+	at org.eclipse.wst.common.core.util.RegistryReader.internalReadElement(RegistryReader.java:81)
+	at org.eclipse.wst.common.core.util.RegistryReader.readRegistry(RegistryReader.java:122)
+	at org.eclipse.jst.j2ee.model.J2EEModelProviderRegistry.getInstance(J2EEModelProviderRegistry.java:43)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.initProviders(ModelProviderManager.java:262)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getProviders(ModelProviderManager.java:338)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getProvider(ModelProviderManager.java:223)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getModelProvider(ModelProviderManager.java:93)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getModelProvider(ModelProviderManager.java:281)
+	at org.eclipse.jst.jee.ui.internal.navigator.JEE5ContentProvider.getCachedModelProvider(JEE5ContentProvider.java:76)
+	at org.eclipse.jst.jee.ui.internal.navigator.Web25ContentProvider.getNewContentProviderInstance(Web25ContentProvider.java:69)
+	at org.eclipse.jst.jee.ui.internal.navigator.LoadingJeeDDJob.run(LoadingJeeDDJob.java:50)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.jst.j2ee 4 0 2018-09-10 12:43:08.063
+!MESSAGE Plugin org.eclipse.jst.jee, extension org.eclipse.jst.j2ee.J2EEModelProvider
+Version 8.0 of project facet jst.appclient does not exist.
+
+!ENTRY org.eclipse.jst.j2ee 4 0 2018-09-10 12:43:08.099
+!MESSAGE Version 8.0 of project facet jst.appclient does not exist.
+!STACK 0
+java.lang.IllegalArgumentException: Version 8.0 of project facet jst.appclient does not exist.
+	at org.eclipse.wst.common.project.facet.core.util.internal.Versionable.getVersion(Versionable.java:80)
+	at org.eclipse.wst.common.project.facet.core.internal.ProjectFacet.getVersion(ProjectFacet.java:1)
+	at org.eclipse.jst.j2ee.model.J2EEModelProviderRegistry.readElement(J2EEModelProviderRegistry.java:85)
+	at org.eclipse.wst.common.core.util.RegistryReader.internalReadElement(RegistryReader.java:81)
+	at org.eclipse.wst.common.core.util.RegistryReader.readRegistry(RegistryReader.java:122)
+	at org.eclipse.jst.j2ee.model.J2EEModelProviderRegistry.getInstance(J2EEModelProviderRegistry.java:43)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.initProviders(ModelProviderManager.java:262)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getProviders(ModelProviderManager.java:338)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getProvider(ModelProviderManager.java:223)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getModelProvider(ModelProviderManager.java:93)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getModelProvider(ModelProviderManager.java:281)
+	at org.eclipse.jst.jee.ui.internal.navigator.JEE5ContentProvider.getCachedModelProvider(JEE5ContentProvider.java:76)
+	at org.eclipse.jst.jee.ui.internal.navigator.Web25ContentProvider.getNewContentProviderInstance(Web25ContentProvider.java:69)
+	at org.eclipse.jst.jee.ui.internal.navigator.LoadingJeeDDJob.run(LoadingJeeDDJob.java:50)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.jface.text 2 0 2018-09-10 13:30:18.584
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-09-10 13:30:18.649
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+!SESSION 2018-09-10 16:02:47.693 -----------------------------------------------
+eclipse.buildId=4.7.1.M20171009-0410
+java.version=1.8.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=pt_PT
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-09-10 16:04:27.614
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\debi_'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jst.j2ee 4 0 2018-09-10 16:07:09.359
+!MESSAGE Plugin org.eclipse.jst.jee, extension org.eclipse.jst.j2ee.J2EEModelProvider
+Version 8.0 of project facet jst.ear does not exist.
+
+!ENTRY org.eclipse.jst.j2ee 4 0 2018-09-10 16:07:09.498
+!MESSAGE Version 8.0 of project facet jst.ear does not exist.
+!STACK 0
+java.lang.IllegalArgumentException: Version 8.0 of project facet jst.ear does not exist.
+	at org.eclipse.wst.common.project.facet.core.util.internal.Versionable.getVersion(Versionable.java:80)
+	at org.eclipse.wst.common.project.facet.core.internal.ProjectFacet.getVersion(ProjectFacet.java:1)
+	at org.eclipse.jst.j2ee.model.J2EEModelProviderRegistry.readElement(J2EEModelProviderRegistry.java:85)
+	at org.eclipse.wst.common.core.util.RegistryReader.internalReadElement(RegistryReader.java:81)
+	at org.eclipse.wst.common.core.util.RegistryReader.readRegistry(RegistryReader.java:122)
+	at org.eclipse.jst.j2ee.model.J2EEModelProviderRegistry.getInstance(J2EEModelProviderRegistry.java:43)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.initProviders(ModelProviderManager.java:262)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getProviders(ModelProviderManager.java:338)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getProvider(ModelProviderManager.java:223)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getModelProvider(ModelProviderManager.java:93)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getModelProvider(ModelProviderManager.java:281)
+	at org.eclipse.jst.jee.ui.internal.navigator.JEE5ContentProvider.getCachedModelProvider(JEE5ContentProvider.java:76)
+	at org.eclipse.jst.jee.ui.internal.navigator.Web25ContentProvider.getNewContentProviderInstance(Web25ContentProvider.java:69)
+	at org.eclipse.jst.jee.ui.internal.navigator.LoadingJeeDDJob.run(LoadingJeeDDJob.java:50)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.jst.j2ee 4 0 2018-09-10 16:07:09.509
+!MESSAGE Plugin org.eclipse.jst.jee, extension org.eclipse.jst.j2ee.J2EEModelProvider
+Version 8.0 of project facet jst.appclient does not exist.
+
+!ENTRY org.eclipse.jst.j2ee 4 0 2018-09-10 16:07:09.515
+!MESSAGE Version 8.0 of project facet jst.appclient does not exist.
+!STACK 0
+java.lang.IllegalArgumentException: Version 8.0 of project facet jst.appclient does not exist.
+	at org.eclipse.wst.common.project.facet.core.util.internal.Versionable.getVersion(Versionable.java:80)
+	at org.eclipse.wst.common.project.facet.core.internal.ProjectFacet.getVersion(ProjectFacet.java:1)
+	at org.eclipse.jst.j2ee.model.J2EEModelProviderRegistry.readElement(J2EEModelProviderRegistry.java:85)
+	at org.eclipse.wst.common.core.util.RegistryReader.internalReadElement(RegistryReader.java:81)
+	at org.eclipse.wst.common.core.util.RegistryReader.readRegistry(RegistryReader.java:122)
+	at org.eclipse.jst.j2ee.model.J2EEModelProviderRegistry.getInstance(J2EEModelProviderRegistry.java:43)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.initProviders(ModelProviderManager.java:262)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getProviders(ModelProviderManager.java:338)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getProvider(ModelProviderManager.java:223)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getModelProvider(ModelProviderManager.java:93)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getModelProvider(ModelProviderManager.java:281)
+	at org.eclipse.jst.jee.ui.internal.navigator.JEE5ContentProvider.getCachedModelProvider(JEE5ContentProvider.java:76)
+	at org.eclipse.jst.jee.ui.internal.navigator.Web25ContentProvider.getNewContentProviderInstance(Web25ContentProvider.java:69)
+	at org.eclipse.jst.jee.ui.internal.navigator.LoadingJeeDDJob.run(LoadingJeeDDJob.java:50)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.jface.text 2 0 2018-09-10 16:12:33.973
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-09-10 16:12:34.054
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.wst.server.core 4 0 2018-09-10 16:16:42.186
+!MESSAGE Server Tomcat v8.5 Server at localhost was unable to start within 45 seconds. If the server requires more time, try increasing the timeout in the server editor.
+!SESSION 2018-09-11 11:26:31.583 -----------------------------------------------
+eclipse.buildId=4.7.1.M20171009-0410
+java.version=1.8.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=pt_PT
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-09-11 11:30:06.724
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\debi_'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jst.j2ee 4 0 2018-09-11 11:33:05.075
+!MESSAGE Plugin org.eclipse.jst.jee, extension org.eclipse.jst.j2ee.J2EEModelProvider
+Version 8.0 of project facet jst.ear does not exist.
+
+!ENTRY org.eclipse.jst.j2ee 4 0 2018-09-11 11:33:05.390
+!MESSAGE Version 8.0 of project facet jst.ear does not exist.
+!STACK 0
+java.lang.IllegalArgumentException: Version 8.0 of project facet jst.ear does not exist.
+	at org.eclipse.wst.common.project.facet.core.util.internal.Versionable.getVersion(Versionable.java:80)
+	at org.eclipse.wst.common.project.facet.core.internal.ProjectFacet.getVersion(ProjectFacet.java:1)
+	at org.eclipse.jst.j2ee.model.J2EEModelProviderRegistry.readElement(J2EEModelProviderRegistry.java:85)
+	at org.eclipse.wst.common.core.util.RegistryReader.internalReadElement(RegistryReader.java:81)
+	at org.eclipse.wst.common.core.util.RegistryReader.readRegistry(RegistryReader.java:122)
+	at org.eclipse.jst.j2ee.model.J2EEModelProviderRegistry.getInstance(J2EEModelProviderRegistry.java:43)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.initProviders(ModelProviderManager.java:262)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getProviders(ModelProviderManager.java:338)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getProvider(ModelProviderManager.java:223)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getModelProvider(ModelProviderManager.java:93)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getModelProvider(ModelProviderManager.java:281)
+	at org.eclipse.jst.jee.ui.internal.navigator.JEE5ContentProvider.getCachedModelProvider(JEE5ContentProvider.java:76)
+	at org.eclipse.jst.jee.ui.internal.navigator.Web25ContentProvider.getNewContentProviderInstance(Web25ContentProvider.java:69)
+	at org.eclipse.jst.jee.ui.internal.navigator.LoadingJeeDDJob.run(LoadingJeeDDJob.java:50)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.jst.j2ee 4 0 2018-09-11 11:33:05.426
+!MESSAGE Plugin org.eclipse.jst.jee, extension org.eclipse.jst.j2ee.J2EEModelProvider
+Version 8.0 of project facet jst.appclient does not exist.
+
+!ENTRY org.eclipse.jst.j2ee 4 0 2018-09-11 11:33:05.434
+!MESSAGE Version 8.0 of project facet jst.appclient does not exist.
+!STACK 0
+java.lang.IllegalArgumentException: Version 8.0 of project facet jst.appclient does not exist.
+	at org.eclipse.wst.common.project.facet.core.util.internal.Versionable.getVersion(Versionable.java:80)
+	at org.eclipse.wst.common.project.facet.core.internal.ProjectFacet.getVersion(ProjectFacet.java:1)
+	at org.eclipse.jst.j2ee.model.J2EEModelProviderRegistry.readElement(J2EEModelProviderRegistry.java:85)
+	at org.eclipse.wst.common.core.util.RegistryReader.internalReadElement(RegistryReader.java:81)
+	at org.eclipse.wst.common.core.util.RegistryReader.readRegistry(RegistryReader.java:122)
+	at org.eclipse.jst.j2ee.model.J2EEModelProviderRegistry.getInstance(J2EEModelProviderRegistry.java:43)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.initProviders(ModelProviderManager.java:262)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getProviders(ModelProviderManager.java:338)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getProvider(ModelProviderManager.java:223)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getModelProvider(ModelProviderManager.java:93)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getModelProvider(ModelProviderManager.java:281)
+	at org.eclipse.jst.jee.ui.internal.navigator.JEE5ContentProvider.getCachedModelProvider(JEE5ContentProvider.java:76)
+	at org.eclipse.jst.jee.ui.internal.navigator.Web25ContentProvider.getNewContentProviderInstance(Web25ContentProvider.java:69)
+	at org.eclipse.jst.jee.ui.internal.navigator.LoadingJeeDDJob.run(LoadingJeeDDJob.java:50)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.jface.text 2 0 2018-09-11 11:34:47.401
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-09-11 11:34:47.471
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.wst.server.core 4 0 2018-09-11 11:39:57.137
+!MESSAGE Server Tomcat v8.5 Server at localhost was unable to start within 45 seconds. If the server requires more time, try increasing the timeout in the server editor.
+
+!ENTRY org.eclipse.jface.text 2 0 2018-09-11 11:50:05.079
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-09-11 11:50:05.088
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 11 2018-09-11 11:50:06.936
+!MESSAGE The model index service was accessed either before it started or after it finished running.
+!STACK 0
+org.eclipse.recommenders.utils.Logs$LogTraceException
+	at org.eclipse.recommenders.utils.Logs$LogTraceException.newTrace(Logs.java:381)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:134)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:126)
+	at org.eclipse.recommenders.internal.models.rcp.EclipseModelIndex.suggest(EclipseModelIndex.java:211)
+	at org.eclipse.recommenders.models.SimpleModelProvider.acquireModel(SimpleModelProvider.java:70)
+	at org.eclipse.recommenders.models.PoolingModelProvider.access$0(PoolingModelProvider.java:1)
+	at org.eclipse.recommenders.models.PoolingModelProvider$ModelPoolFactoryMediator.makeObject(PoolingModelProvider.java:96)
+	at org.eclipse.recommenders.models.PoolingModelProvider$ModelPoolFactoryMediator.makeObject(PoolingModelProvider.java:1)
+	at org.apache.commons.pool.impl.GenericKeyedObjectPool.borrowObject(GenericKeyedObjectPool.java:1220)
+	at org.eclipse.recommenders.models.PoolingModelProvider.acquireModel(PoolingModelProvider.java:67)
+	at org.eclipse.recommenders.internal.calls.rcp.RcpCallModelProvider.acquireModel(RcpCallModelProvider.java:65)
+	at org.eclipse.recommenders.internal.calls.rcp.RcpCallModelProvider.acquireModel(RcpCallModelProvider.java:1)
+	at org.eclipse.recommenders.internal.models.rcp.PrefetchModelArchiveJob.run(PrefetchModelArchiveJob.java:43)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.jface.text 2 0 2018-09-11 11:50:55.284
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-09-11 11:50:55.314
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-09-11 12:51:55.018
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-09-11 12:51:55.026
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+!SESSION 2018-09-11 21:31:04.835 -----------------------------------------------
+eclipse.buildId=4.7.1.M20171009-0410
+java.version=1.8.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=pt_PT
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-09-11 21:32:19.423
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\debi_'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jst.j2ee 4 0 2018-09-11 21:32:27.625
+!MESSAGE Plugin org.eclipse.jst.jee, extension org.eclipse.jst.j2ee.J2EEModelProvider
+Version 8.0 of project facet jst.ear does not exist.
+
+!ENTRY org.eclipse.jst.j2ee 4 0 2018-09-11 21:32:27.635
+!MESSAGE Version 8.0 of project facet jst.ear does not exist.
+!STACK 0
+java.lang.IllegalArgumentException: Version 8.0 of project facet jst.ear does not exist.
+	at org.eclipse.wst.common.project.facet.core.util.internal.Versionable.getVersion(Versionable.java:80)
+	at org.eclipse.wst.common.project.facet.core.internal.ProjectFacet.getVersion(ProjectFacet.java:1)
+	at org.eclipse.jst.j2ee.model.J2EEModelProviderRegistry.readElement(J2EEModelProviderRegistry.java:85)
+	at org.eclipse.wst.common.core.util.RegistryReader.internalReadElement(RegistryReader.java:81)
+	at org.eclipse.wst.common.core.util.RegistryReader.readRegistry(RegistryReader.java:122)
+	at org.eclipse.jst.j2ee.model.J2EEModelProviderRegistry.getInstance(J2EEModelProviderRegistry.java:43)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.initProviders(ModelProviderManager.java:262)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getProviders(ModelProviderManager.java:338)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getProvider(ModelProviderManager.java:223)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getModelProvider(ModelProviderManager.java:93)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getModelProvider(ModelProviderManager.java:281)
+	at org.eclipse.jst.jee.ui.internal.navigator.JEE5ContentProvider.getCachedModelProvider(JEE5ContentProvider.java:76)
+	at org.eclipse.jst.jee.ui.internal.navigator.Web25ContentProvider.getNewContentProviderInstance(Web25ContentProvider.java:69)
+	at org.eclipse.jst.jee.ui.internal.navigator.LoadingJeeDDJob.run(LoadingJeeDDJob.java:50)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.jst.j2ee 4 0 2018-09-11 21:32:27.644
+!MESSAGE Plugin org.eclipse.jst.jee, extension org.eclipse.jst.j2ee.J2EEModelProvider
+Version 8.0 of project facet jst.appclient does not exist.
+
+!ENTRY org.eclipse.jst.j2ee 4 0 2018-09-11 21:32:27.650
+!MESSAGE Version 8.0 of project facet jst.appclient does not exist.
+!STACK 0
+java.lang.IllegalArgumentException: Version 8.0 of project facet jst.appclient does not exist.
+	at org.eclipse.wst.common.project.facet.core.util.internal.Versionable.getVersion(Versionable.java:80)
+	at org.eclipse.wst.common.project.facet.core.internal.ProjectFacet.getVersion(ProjectFacet.java:1)
+	at org.eclipse.jst.j2ee.model.J2EEModelProviderRegistry.readElement(J2EEModelProviderRegistry.java:85)
+	at org.eclipse.wst.common.core.util.RegistryReader.internalReadElement(RegistryReader.java:81)
+	at org.eclipse.wst.common.core.util.RegistryReader.readRegistry(RegistryReader.java:122)
+	at org.eclipse.jst.j2ee.model.J2EEModelProviderRegistry.getInstance(J2EEModelProviderRegistry.java:43)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.initProviders(ModelProviderManager.java:262)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getProviders(ModelProviderManager.java:338)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getProvider(ModelProviderManager.java:223)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getModelProvider(ModelProviderManager.java:93)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getModelProvider(ModelProviderManager.java:281)
+	at org.eclipse.jst.jee.ui.internal.navigator.JEE5ContentProvider.getCachedModelProvider(JEE5ContentProvider.java:76)
+	at org.eclipse.jst.jee.ui.internal.navigator.Web25ContentProvider.getNewContentProviderInstance(Web25ContentProvider.java:69)
+	at org.eclipse.jst.jee.ui.internal.navigator.LoadingJeeDDJob.run(LoadingJeeDDJob.java:50)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.jface.text 2 0 2018-09-11 21:46:31.060
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-09-11 21:46:31.097
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+!SESSION 2018-09-12 12:18:28.392 -----------------------------------------------
+eclipse.buildId=4.7.1.M20171009-0410
+java.version=1.8.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=pt_PT
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-09-12 12:20:24.239
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\debi_'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jst.j2ee 4 0 2018-09-12 12:20:27.584
+!MESSAGE Plugin org.eclipse.jst.jee, extension org.eclipse.jst.j2ee.J2EEModelProvider
+Version 8.0 of project facet jst.ear does not exist.
+
+!ENTRY org.eclipse.jst.j2ee 4 0 2018-09-12 12:20:27.598
+!MESSAGE Version 8.0 of project facet jst.ear does not exist.
+!STACK 0
+java.lang.IllegalArgumentException: Version 8.0 of project facet jst.ear does not exist.
+	at org.eclipse.wst.common.project.facet.core.util.internal.Versionable.getVersion(Versionable.java:80)
+	at org.eclipse.wst.common.project.facet.core.internal.ProjectFacet.getVersion(ProjectFacet.java:1)
+	at org.eclipse.jst.j2ee.model.J2EEModelProviderRegistry.readElement(J2EEModelProviderRegistry.java:85)
+	at org.eclipse.wst.common.core.util.RegistryReader.internalReadElement(RegistryReader.java:81)
+	at org.eclipse.wst.common.core.util.RegistryReader.readRegistry(RegistryReader.java:122)
+	at org.eclipse.jst.j2ee.model.J2EEModelProviderRegistry.getInstance(J2EEModelProviderRegistry.java:43)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.initProviders(ModelProviderManager.java:262)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getProviders(ModelProviderManager.java:338)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getProvider(ModelProviderManager.java:223)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getModelProvider(ModelProviderManager.java:93)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getModelProvider(ModelProviderManager.java:281)
+	at org.eclipse.jst.jee.ui.internal.navigator.JEE5ContentProvider.getCachedModelProvider(JEE5ContentProvider.java:76)
+	at org.eclipse.jst.jee.ui.internal.navigator.Web25ContentProvider.getNewContentProviderInstance(Web25ContentProvider.java:69)
+	at org.eclipse.jst.jee.ui.internal.navigator.LoadingJeeDDJob.run(LoadingJeeDDJob.java:50)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.jst.j2ee 4 0 2018-09-12 12:20:27.886
+!MESSAGE Plugin org.eclipse.jst.jee, extension org.eclipse.jst.j2ee.J2EEModelProvider
+Version 8.0 of project facet jst.appclient does not exist.
+
+!ENTRY org.eclipse.jst.j2ee 4 0 2018-09-12 12:20:27.940
+!MESSAGE Version 8.0 of project facet jst.appclient does not exist.
+!STACK 0
+java.lang.IllegalArgumentException: Version 8.0 of project facet jst.appclient does not exist.
+	at org.eclipse.wst.common.project.facet.core.util.internal.Versionable.getVersion(Versionable.java:80)
+	at org.eclipse.wst.common.project.facet.core.internal.ProjectFacet.getVersion(ProjectFacet.java:1)
+	at org.eclipse.jst.j2ee.model.J2EEModelProviderRegistry.readElement(J2EEModelProviderRegistry.java:85)
+	at org.eclipse.wst.common.core.util.RegistryReader.internalReadElement(RegistryReader.java:81)
+	at org.eclipse.wst.common.core.util.RegistryReader.readRegistry(RegistryReader.java:122)
+	at org.eclipse.jst.j2ee.model.J2EEModelProviderRegistry.getInstance(J2EEModelProviderRegistry.java:43)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.initProviders(ModelProviderManager.java:262)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getProviders(ModelProviderManager.java:338)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getProvider(ModelProviderManager.java:223)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getModelProvider(ModelProviderManager.java:93)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getModelProvider(ModelProviderManager.java:281)
+	at org.eclipse.jst.jee.ui.internal.navigator.JEE5ContentProvider.getCachedModelProvider(JEE5ContentProvider.java:76)
+	at org.eclipse.jst.jee.ui.internal.navigator.Web25ContentProvider.getNewContentProviderInstance(Web25ContentProvider.java:69)
+	at org.eclipse.jst.jee.ui.internal.navigator.LoadingJeeDDJob.run(LoadingJeeDDJob.java:50)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.jface.text 2 0 2018-09-12 12:45:24.516
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-09-12 12:45:24.536
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-09-12 14:37:46.814
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-09-12 14:37:46.834
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+!SESSION 2018-09-12 16:17:42.629 -----------------------------------------------
+eclipse.buildId=4.7.1.M20171009-0410
+java.version=1.8.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=pt_PT
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-09-12 16:20:34.869
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\debi_'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jst.j2ee 4 0 2018-09-12 16:20:52.074
+!MESSAGE Plugin org.eclipse.jst.jee, extension org.eclipse.jst.j2ee.J2EEModelProvider
+Version 8.0 of project facet jst.ear does not exist.
+
+!ENTRY org.eclipse.jst.j2ee 4 0 2018-09-12 16:20:52.577
+!MESSAGE Version 8.0 of project facet jst.ear does not exist.
+!STACK 0
+java.lang.IllegalArgumentException: Version 8.0 of project facet jst.ear does not exist.
+	at org.eclipse.wst.common.project.facet.core.util.internal.Versionable.getVersion(Versionable.java:80)
+	at org.eclipse.wst.common.project.facet.core.internal.ProjectFacet.getVersion(ProjectFacet.java:1)
+	at org.eclipse.jst.j2ee.model.J2EEModelProviderRegistry.readElement(J2EEModelProviderRegistry.java:85)
+	at org.eclipse.wst.common.core.util.RegistryReader.internalReadElement(RegistryReader.java:81)
+	at org.eclipse.wst.common.core.util.RegistryReader.readRegistry(RegistryReader.java:122)
+	at org.eclipse.jst.j2ee.model.J2EEModelProviderRegistry.getInstance(J2EEModelProviderRegistry.java:43)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.initProviders(ModelProviderManager.java:262)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getProviders(ModelProviderManager.java:338)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getProvider(ModelProviderManager.java:223)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getModelProvider(ModelProviderManager.java:93)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getModelProvider(ModelProviderManager.java:281)
+	at org.eclipse.jst.jee.ui.internal.navigator.JEE5ContentProvider.getCachedModelProvider(JEE5ContentProvider.java:76)
+	at org.eclipse.jst.jee.ui.internal.navigator.Web25ContentProvider.getNewContentProviderInstance(Web25ContentProvider.java:69)
+	at org.eclipse.jst.jee.ui.internal.navigator.LoadingJeeDDJob.run(LoadingJeeDDJob.java:50)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.jst.j2ee 4 0 2018-09-12 16:20:52.799
+!MESSAGE Plugin org.eclipse.jst.jee, extension org.eclipse.jst.j2ee.J2EEModelProvider
+Version 8.0 of project facet jst.appclient does not exist.
+
+!ENTRY org.eclipse.jst.j2ee 4 0 2018-09-12 16:20:52.808
+!MESSAGE Version 8.0 of project facet jst.appclient does not exist.
+!STACK 0
+java.lang.IllegalArgumentException: Version 8.0 of project facet jst.appclient does not exist.
+	at org.eclipse.wst.common.project.facet.core.util.internal.Versionable.getVersion(Versionable.java:80)
+	at org.eclipse.wst.common.project.facet.core.internal.ProjectFacet.getVersion(ProjectFacet.java:1)
+	at org.eclipse.jst.j2ee.model.J2EEModelProviderRegistry.readElement(J2EEModelProviderRegistry.java:85)
+	at org.eclipse.wst.common.core.util.RegistryReader.internalReadElement(RegistryReader.java:81)
+	at org.eclipse.wst.common.core.util.RegistryReader.readRegistry(RegistryReader.java:122)
+	at org.eclipse.jst.j2ee.model.J2EEModelProviderRegistry.getInstance(J2EEModelProviderRegistry.java:43)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.initProviders(ModelProviderManager.java:262)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getProviders(ModelProviderManager.java:338)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getProvider(ModelProviderManager.java:223)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getModelProvider(ModelProviderManager.java:93)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getModelProvider(ModelProviderManager.java:281)
+	at org.eclipse.jst.jee.ui.internal.navigator.JEE5ContentProvider.getCachedModelProvider(JEE5ContentProvider.java:76)
+	at org.eclipse.jst.jee.ui.internal.navigator.Web25ContentProvider.getNewContentProviderInstance(Web25ContentProvider.java:69)
+	at org.eclipse.jst.jee.ui.internal.navigator.LoadingJeeDDJob.run(LoadingJeeDDJob.java:50)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.wst.server.core 4 0 2018-09-12 16:22:11.785
+!MESSAGE Server Tomcat v8.5 Server at localhost was unable to start within 45 seconds. If the server requires more time, try increasing the timeout in the server editor.
+
+!ENTRY org.eclipse.jst.server.core 4 0 2018-09-12 16:22:26.269
+!MESSAGE Could not launch in profiling mode because no profilers are configured.
+
+!ENTRY org.eclipse.jface.text 2 0 2018-09-12 16:32:25.936
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-09-12 16:32:25.943
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+!SESSION 2018-09-12 21:10:18.298 -----------------------------------------------
+eclipse.buildId=4.7.1.M20171009-0410
+java.version=1.8.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=pt_PT
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-09-12 21:11:34.866
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\debi_'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jst.j2ee 4 0 2018-09-12 21:16:12.119
+!MESSAGE Plugin org.eclipse.jst.jee, extension org.eclipse.jst.j2ee.J2EEModelProvider
+Version 8.0 of project facet jst.ear does not exist.
+
+!ENTRY org.eclipse.jst.j2ee 4 0 2018-09-12 21:16:12.999
+!MESSAGE Version 8.0 of project facet jst.ear does not exist.
+!STACK 0
+java.lang.IllegalArgumentException: Version 8.0 of project facet jst.ear does not exist.
+	at org.eclipse.wst.common.project.facet.core.util.internal.Versionable.getVersion(Versionable.java:80)
+	at org.eclipse.wst.common.project.facet.core.internal.ProjectFacet.getVersion(ProjectFacet.java:1)
+	at org.eclipse.jst.j2ee.model.J2EEModelProviderRegistry.readElement(J2EEModelProviderRegistry.java:85)
+	at org.eclipse.wst.common.core.util.RegistryReader.internalReadElement(RegistryReader.java:81)
+	at org.eclipse.wst.common.core.util.RegistryReader.readRegistry(RegistryReader.java:122)
+	at org.eclipse.jst.j2ee.model.J2EEModelProviderRegistry.getInstance(J2EEModelProviderRegistry.java:43)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.initProviders(ModelProviderManager.java:262)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getProviders(ModelProviderManager.java:338)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getProvider(ModelProviderManager.java:223)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getModelProvider(ModelProviderManager.java:93)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getModelProvider(ModelProviderManager.java:281)
+	at org.eclipse.jst.jee.ui.internal.navigator.JEE5ContentProvider.getCachedModelProvider(JEE5ContentProvider.java:76)
+	at org.eclipse.jst.jee.ui.internal.navigator.Web25ContentProvider.getNewContentProviderInstance(Web25ContentProvider.java:69)
+	at org.eclipse.jst.jee.ui.internal.navigator.LoadingJeeDDJob.run(LoadingJeeDDJob.java:50)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.jst.j2ee 4 0 2018-09-12 21:16:16.742
+!MESSAGE Plugin org.eclipse.jst.jee, extension org.eclipse.jst.j2ee.J2EEModelProvider
+Version 8.0 of project facet jst.appclient does not exist.
+
+!ENTRY org.eclipse.jst.j2ee 4 0 2018-09-12 21:16:16.756
+!MESSAGE Version 8.0 of project facet jst.appclient does not exist.
+!STACK 0
+java.lang.IllegalArgumentException: Version 8.0 of project facet jst.appclient does not exist.
+	at org.eclipse.wst.common.project.facet.core.util.internal.Versionable.getVersion(Versionable.java:80)
+	at org.eclipse.wst.common.project.facet.core.internal.ProjectFacet.getVersion(ProjectFacet.java:1)
+	at org.eclipse.jst.j2ee.model.J2EEModelProviderRegistry.readElement(J2EEModelProviderRegistry.java:85)
+	at org.eclipse.wst.common.core.util.RegistryReader.internalReadElement(RegistryReader.java:81)
+	at org.eclipse.wst.common.core.util.RegistryReader.readRegistry(RegistryReader.java:122)
+	at org.eclipse.jst.j2ee.model.J2EEModelProviderRegistry.getInstance(J2EEModelProviderRegistry.java:43)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.initProviders(ModelProviderManager.java:262)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getProviders(ModelProviderManager.java:338)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getProvider(ModelProviderManager.java:223)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getModelProvider(ModelProviderManager.java:93)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getModelProvider(ModelProviderManager.java:281)
+	at org.eclipse.jst.jee.ui.internal.navigator.JEE5ContentProvider.getCachedModelProvider(JEE5ContentProvider.java:76)
+	at org.eclipse.jst.jee.ui.internal.navigator.Web25ContentProvider.getNewContentProviderInstance(Web25ContentProvider.java:69)
+	at org.eclipse.jst.jee.ui.internal.navigator.LoadingJeeDDJob.run(LoadingJeeDDJob.java:50)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.jface.text 2 0 2018-09-12 21:37:21.299
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-09-12 21:37:21.327
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+!SESSION 2018-09-13 11:59:09.901 -----------------------------------------------
+eclipse.buildId=4.7.1.M20171009-0410
+java.version=1.8.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=pt_PT
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-09-13 12:00:13.473
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\debi_'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jst.j2ee 4 0 2018-09-13 12:00:18.636
+!MESSAGE Plugin org.eclipse.jst.jee, extension org.eclipse.jst.j2ee.J2EEModelProvider
+Version 8.0 of project facet jst.ear does not exist.
+
+!ENTRY org.eclipse.jst.j2ee 4 0 2018-09-13 12:00:18.779
+!MESSAGE Version 8.0 of project facet jst.ear does not exist.
+!STACK 0
+java.lang.IllegalArgumentException: Version 8.0 of project facet jst.ear does not exist.
+	at org.eclipse.wst.common.project.facet.core.util.internal.Versionable.getVersion(Versionable.java:80)
+	at org.eclipse.wst.common.project.facet.core.internal.ProjectFacet.getVersion(ProjectFacet.java:1)
+	at org.eclipse.jst.j2ee.model.J2EEModelProviderRegistry.readElement(J2EEModelProviderRegistry.java:85)
+	at org.eclipse.wst.common.core.util.RegistryReader.internalReadElement(RegistryReader.java:81)
+	at org.eclipse.wst.common.core.util.RegistryReader.readRegistry(RegistryReader.java:122)
+	at org.eclipse.jst.j2ee.model.J2EEModelProviderRegistry.getInstance(J2EEModelProviderRegistry.java:43)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.initProviders(ModelProviderManager.java:262)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getProviders(ModelProviderManager.java:338)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getProvider(ModelProviderManager.java:223)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getModelProvider(ModelProviderManager.java:93)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getModelProvider(ModelProviderManager.java:281)
+	at org.eclipse.jst.jee.ui.internal.navigator.JEE5ContentProvider.getCachedModelProvider(JEE5ContentProvider.java:76)
+	at org.eclipse.jst.jee.ui.internal.navigator.Web25ContentProvider.getNewContentProviderInstance(Web25ContentProvider.java:69)
+	at org.eclipse.jst.jee.ui.internal.navigator.LoadingJeeDDJob.run(LoadingJeeDDJob.java:50)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.jst.j2ee 4 0 2018-09-13 12:00:18.853
+!MESSAGE Plugin org.eclipse.jst.jee, extension org.eclipse.jst.j2ee.J2EEModelProvider
+Version 8.0 of project facet jst.appclient does not exist.
+
+!ENTRY org.eclipse.jst.j2ee 4 0 2018-09-13 12:00:18.861
+!MESSAGE Version 8.0 of project facet jst.appclient does not exist.
+!STACK 0
+java.lang.IllegalArgumentException: Version 8.0 of project facet jst.appclient does not exist.
+	at org.eclipse.wst.common.project.facet.core.util.internal.Versionable.getVersion(Versionable.java:80)
+	at org.eclipse.wst.common.project.facet.core.internal.ProjectFacet.getVersion(ProjectFacet.java:1)
+	at org.eclipse.jst.j2ee.model.J2EEModelProviderRegistry.readElement(J2EEModelProviderRegistry.java:85)
+	at org.eclipse.wst.common.core.util.RegistryReader.internalReadElement(RegistryReader.java:81)
+	at org.eclipse.wst.common.core.util.RegistryReader.readRegistry(RegistryReader.java:122)
+	at org.eclipse.jst.j2ee.model.J2EEModelProviderRegistry.getInstance(J2EEModelProviderRegistry.java:43)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.initProviders(ModelProviderManager.java:262)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getProviders(ModelProviderManager.java:338)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getProvider(ModelProviderManager.java:223)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getModelProvider(ModelProviderManager.java:93)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getModelProvider(ModelProviderManager.java:281)
+	at org.eclipse.jst.jee.ui.internal.navigator.JEE5ContentProvider.getCachedModelProvider(JEE5ContentProvider.java:76)
+	at org.eclipse.jst.jee.ui.internal.navigator.Web25ContentProvider.getNewContentProviderInstance(Web25ContentProvider.java:69)
+	at org.eclipse.jst.jee.ui.internal.navigator.LoadingJeeDDJob.run(LoadingJeeDDJob.java:50)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+!SESSION 2018-09-13 14:42:27.625 -----------------------------------------------
+eclipse.buildId=4.7.1.M20171009-0410
+java.version=1.8.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=pt_PT
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-09-13 14:43:46.933
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\debi_'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jst.j2ee 4 0 2018-09-13 14:44:00.040
+!MESSAGE Plugin org.eclipse.jst.jee, extension org.eclipse.jst.j2ee.J2EEModelProvider
+Version 8.0 of project facet jst.ear does not exist.
+
+!ENTRY org.eclipse.jst.j2ee 4 0 2018-09-13 14:44:00.075
+!MESSAGE Version 8.0 of project facet jst.ear does not exist.
+!STACK 0
+java.lang.IllegalArgumentException: Version 8.0 of project facet jst.ear does not exist.
+	at org.eclipse.wst.common.project.facet.core.util.internal.Versionable.getVersion(Versionable.java:80)
+	at org.eclipse.wst.common.project.facet.core.internal.ProjectFacet.getVersion(ProjectFacet.java:1)
+	at org.eclipse.jst.j2ee.model.J2EEModelProviderRegistry.readElement(J2EEModelProviderRegistry.java:85)
+	at org.eclipse.wst.common.core.util.RegistryReader.internalReadElement(RegistryReader.java:81)
+	at org.eclipse.wst.common.core.util.RegistryReader.readRegistry(RegistryReader.java:122)
+	at org.eclipse.jst.j2ee.model.J2EEModelProviderRegistry.getInstance(J2EEModelProviderRegistry.java:43)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.initProviders(ModelProviderManager.java:262)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getProviders(ModelProviderManager.java:338)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getProvider(ModelProviderManager.java:223)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getModelProvider(ModelProviderManager.java:93)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getModelProvider(ModelProviderManager.java:281)
+	at org.eclipse.jst.jee.ui.internal.navigator.JEE5ContentProvider.getCachedModelProvider(JEE5ContentProvider.java:76)
+	at org.eclipse.jst.jee.ui.internal.navigator.Web25ContentProvider.getNewContentProviderInstance(Web25ContentProvider.java:69)
+	at org.eclipse.jst.jee.ui.internal.navigator.LoadingJeeDDJob.run(LoadingJeeDDJob.java:50)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.jst.j2ee 4 0 2018-09-13 14:44:00.086
+!MESSAGE Plugin org.eclipse.jst.jee, extension org.eclipse.jst.j2ee.J2EEModelProvider
+Version 8.0 of project facet jst.appclient does not exist.
+
+!ENTRY org.eclipse.jst.j2ee 4 0 2018-09-13 14:44:00.093
+!MESSAGE Version 8.0 of project facet jst.appclient does not exist.
+!STACK 0
+java.lang.IllegalArgumentException: Version 8.0 of project facet jst.appclient does not exist.
+	at org.eclipse.wst.common.project.facet.core.util.internal.Versionable.getVersion(Versionable.java:80)
+	at org.eclipse.wst.common.project.facet.core.internal.ProjectFacet.getVersion(ProjectFacet.java:1)
+	at org.eclipse.jst.j2ee.model.J2EEModelProviderRegistry.readElement(J2EEModelProviderRegistry.java:85)
+	at org.eclipse.wst.common.core.util.RegistryReader.internalReadElement(RegistryReader.java:81)
+	at org.eclipse.wst.common.core.util.RegistryReader.readRegistry(RegistryReader.java:122)
+	at org.eclipse.jst.j2ee.model.J2EEModelProviderRegistry.getInstance(J2EEModelProviderRegistry.java:43)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.initProviders(ModelProviderManager.java:262)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getProviders(ModelProviderManager.java:338)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getProvider(ModelProviderManager.java:223)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getModelProvider(ModelProviderManager.java:93)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getModelProvider(ModelProviderManager.java:281)
+	at org.eclipse.jst.jee.ui.internal.navigator.JEE5ContentProvider.getCachedModelProvider(JEE5ContentProvider.java:76)
+	at org.eclipse.jst.jee.ui.internal.navigator.Web25ContentProvider.getNewContentProviderInstance(Web25ContentProvider.java:69)
+	at org.eclipse.jst.jee.ui.internal.navigator.LoadingJeeDDJob.run(LoadingJeeDDJob.java:50)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.jface.text 2 0 2018-09-13 14:48:01.753
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-09-13 14:48:01.796
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+!SESSION 2018-09-13 16:48:15.314 -----------------------------------------------
+eclipse.buildId=4.7.1.M20171009-0410
+java.version=1.8.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=pt_PT
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-09-13 16:49:21.134
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\debi_'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jst.j2ee 4 0 2018-09-13 16:51:33.195
+!MESSAGE Plugin org.eclipse.jst.jee, extension org.eclipse.jst.j2ee.J2EEModelProvider
+Version 8.0 of project facet jst.ear does not exist.
+
+!ENTRY org.eclipse.jst.j2ee 4 0 2018-09-13 16:51:33.329
+!MESSAGE Version 8.0 of project facet jst.ear does not exist.
+!STACK 0
+java.lang.IllegalArgumentException: Version 8.0 of project facet jst.ear does not exist.
+	at org.eclipse.wst.common.project.facet.core.util.internal.Versionable.getVersion(Versionable.java:80)
+	at org.eclipse.wst.common.project.facet.core.internal.ProjectFacet.getVersion(ProjectFacet.java:1)
+	at org.eclipse.jst.j2ee.model.J2EEModelProviderRegistry.readElement(J2EEModelProviderRegistry.java:85)
+	at org.eclipse.wst.common.core.util.RegistryReader.internalReadElement(RegistryReader.java:81)
+	at org.eclipse.wst.common.core.util.RegistryReader.readRegistry(RegistryReader.java:122)
+	at org.eclipse.jst.j2ee.model.J2EEModelProviderRegistry.getInstance(J2EEModelProviderRegistry.java:43)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.initProviders(ModelProviderManager.java:262)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getProviders(ModelProviderManager.java:338)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getProvider(ModelProviderManager.java:223)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getModelProvider(ModelProviderManager.java:93)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getModelProvider(ModelProviderManager.java:281)
+	at org.eclipse.jst.jee.ui.internal.navigator.JEE5ContentProvider.getCachedModelProvider(JEE5ContentProvider.java:76)
+	at org.eclipse.jst.jee.ui.internal.navigator.Web25ContentProvider.getNewContentProviderInstance(Web25ContentProvider.java:69)
+	at org.eclipse.jst.jee.ui.internal.navigator.LoadingJeeDDJob.run(LoadingJeeDDJob.java:50)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.jst.j2ee 4 0 2018-09-13 16:51:33.400
+!MESSAGE Plugin org.eclipse.jst.jee, extension org.eclipse.jst.j2ee.J2EEModelProvider
+Version 8.0 of project facet jst.appclient does not exist.
+
+!ENTRY org.eclipse.jst.j2ee 4 0 2018-09-13 16:51:33.419
+!MESSAGE Version 8.0 of project facet jst.appclient does not exist.
+!STACK 0
+java.lang.IllegalArgumentException: Version 8.0 of project facet jst.appclient does not exist.
+	at org.eclipse.wst.common.project.facet.core.util.internal.Versionable.getVersion(Versionable.java:80)
+	at org.eclipse.wst.common.project.facet.core.internal.ProjectFacet.getVersion(ProjectFacet.java:1)
+	at org.eclipse.jst.j2ee.model.J2EEModelProviderRegistry.readElement(J2EEModelProviderRegistry.java:85)
+	at org.eclipse.wst.common.core.util.RegistryReader.internalReadElement(RegistryReader.java:81)
+	at org.eclipse.wst.common.core.util.RegistryReader.readRegistry(RegistryReader.java:122)
+	at org.eclipse.jst.j2ee.model.J2EEModelProviderRegistry.getInstance(J2EEModelProviderRegistry.java:43)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.initProviders(ModelProviderManager.java:262)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getProviders(ModelProviderManager.java:338)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getProvider(ModelProviderManager.java:223)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getModelProvider(ModelProviderManager.java:93)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getModelProvider(ModelProviderManager.java:281)
+	at org.eclipse.jst.jee.ui.internal.navigator.JEE5ContentProvider.getCachedModelProvider(JEE5ContentProvider.java:76)
+	at org.eclipse.jst.jee.ui.internal.navigator.Web25ContentProvider.getNewContentProviderInstance(Web25ContentProvider.java:69)
+	at org.eclipse.jst.jee.ui.internal.navigator.LoadingJeeDDJob.run(LoadingJeeDDJob.java:50)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+!SESSION 2018-09-13 22:49:05.661 -----------------------------------------------
+eclipse.buildId=4.7.1.M20171009-0410
+java.version=1.8.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=pt_PT
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-09-13 22:53:37.072
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\debi_'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.wst.server.core 4 0 2018-09-13 22:54:41.466
+!MESSAGE Server Tomcat v8.5 Server at localhost was unable to start within 45 seconds. If the server requires more time, try increasing the timeout in the server editor.
+
+!ENTRY org.eclipse.jst.j2ee 4 0 2018-09-13 23:00:37.765
+!MESSAGE Plugin org.eclipse.jst.jee, extension org.eclipse.jst.j2ee.J2EEModelProvider
+Version 8.0 of project facet jst.ear does not exist.
+
+!ENTRY org.eclipse.jst.j2ee 4 0 2018-09-13 23:00:37.782
+!MESSAGE Version 8.0 of project facet jst.ear does not exist.
+!STACK 0
+java.lang.IllegalArgumentException: Version 8.0 of project facet jst.ear does not exist.
+	at org.eclipse.wst.common.project.facet.core.util.internal.Versionable.getVersion(Versionable.java:80)
+	at org.eclipse.wst.common.project.facet.core.internal.ProjectFacet.getVersion(ProjectFacet.java:1)
+	at org.eclipse.jst.j2ee.model.J2EEModelProviderRegistry.readElement(J2EEModelProviderRegistry.java:85)
+	at org.eclipse.wst.common.core.util.RegistryReader.internalReadElement(RegistryReader.java:81)
+	at org.eclipse.wst.common.core.util.RegistryReader.readRegistry(RegistryReader.java:122)
+	at org.eclipse.jst.j2ee.model.J2EEModelProviderRegistry.getInstance(J2EEModelProviderRegistry.java:43)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.initProviders(ModelProviderManager.java:262)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getProviders(ModelProviderManager.java:338)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getProvider(ModelProviderManager.java:223)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getModelProvider(ModelProviderManager.java:93)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getModelProvider(ModelProviderManager.java:281)
+	at org.eclipse.jst.jee.ui.internal.navigator.JEE5ContentProvider.getCachedModelProvider(JEE5ContentProvider.java:76)
+	at org.eclipse.jst.jee.ui.internal.navigator.Web25ContentProvider.getNewContentProviderInstance(Web25ContentProvider.java:69)
+	at org.eclipse.jst.jee.ui.internal.navigator.LoadingJeeDDJob.run(LoadingJeeDDJob.java:50)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.jst.j2ee 4 0 2018-09-13 23:00:37.790
+!MESSAGE Plugin org.eclipse.jst.jee, extension org.eclipse.jst.j2ee.J2EEModelProvider
+Version 8.0 of project facet jst.appclient does not exist.
+
+!ENTRY org.eclipse.jst.j2ee 4 0 2018-09-13 23:00:37.797
+!MESSAGE Version 8.0 of project facet jst.appclient does not exist.
+!STACK 0
+java.lang.IllegalArgumentException: Version 8.0 of project facet jst.appclient does not exist.
+	at org.eclipse.wst.common.project.facet.core.util.internal.Versionable.getVersion(Versionable.java:80)
+	at org.eclipse.wst.common.project.facet.core.internal.ProjectFacet.getVersion(ProjectFacet.java:1)
+	at org.eclipse.jst.j2ee.model.J2EEModelProviderRegistry.readElement(J2EEModelProviderRegistry.java:85)
+	at org.eclipse.wst.common.core.util.RegistryReader.internalReadElement(RegistryReader.java:81)
+	at org.eclipse.wst.common.core.util.RegistryReader.readRegistry(RegistryReader.java:122)
+	at org.eclipse.jst.j2ee.model.J2EEModelProviderRegistry.getInstance(J2EEModelProviderRegistry.java:43)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.initProviders(ModelProviderManager.java:262)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getProviders(ModelProviderManager.java:338)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getProvider(ModelProviderManager.java:223)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getModelProvider(ModelProviderManager.java:93)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getModelProvider(ModelProviderManager.java:281)
+	at org.eclipse.jst.jee.ui.internal.navigator.JEE5ContentProvider.getCachedModelProvider(JEE5ContentProvider.java:76)
+	at org.eclipse.jst.jee.ui.internal.navigator.Web25ContentProvider.getNewContentProviderInstance(Web25ContentProvider.java:69)
+	at org.eclipse.jst.jee.ui.internal.navigator.LoadingJeeDDJob.run(LoadingJeeDDJob.java:50)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.jface.text 2 0 2018-09-13 23:36:46.990
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-09-13 23:36:46.999
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-09-13 23:46:45.702
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-09-13 23:46:45.720
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+!SESSION 2018-09-14 10:57:10.225 -----------------------------------------------
+eclipse.buildId=4.7.1.M20171009-0410
+java.version=1.8.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=pt_PT
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-09-14 10:57:49.517
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\debi_'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jst.j2ee 4 0 2018-09-14 11:14:37.229
+!MESSAGE Plugin org.eclipse.jst.jee, extension org.eclipse.jst.j2ee.J2EEModelProvider
+Version 8.0 of project facet jst.ear does not exist.
+
+!ENTRY org.eclipse.jst.j2ee 4 0 2018-09-14 11:14:37.317
+!MESSAGE Version 8.0 of project facet jst.ear does not exist.
+!STACK 0
+java.lang.IllegalArgumentException: Version 8.0 of project facet jst.ear does not exist.
+	at org.eclipse.wst.common.project.facet.core.util.internal.Versionable.getVersion(Versionable.java:80)
+	at org.eclipse.wst.common.project.facet.core.internal.ProjectFacet.getVersion(ProjectFacet.java:1)
+	at org.eclipse.jst.j2ee.model.J2EEModelProviderRegistry.readElement(J2EEModelProviderRegistry.java:85)
+	at org.eclipse.wst.common.core.util.RegistryReader.internalReadElement(RegistryReader.java:81)
+	at org.eclipse.wst.common.core.util.RegistryReader.readRegistry(RegistryReader.java:122)
+	at org.eclipse.jst.j2ee.model.J2EEModelProviderRegistry.getInstance(J2EEModelProviderRegistry.java:43)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.initProviders(ModelProviderManager.java:262)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getProviders(ModelProviderManager.java:338)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getProvider(ModelProviderManager.java:223)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getModelProvider(ModelProviderManager.java:93)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getModelProvider(ModelProviderManager.java:281)
+	at org.eclipse.jst.jee.ui.internal.navigator.JEE5ContentProvider.getCachedModelProvider(JEE5ContentProvider.java:76)
+	at org.eclipse.jst.jee.ui.internal.navigator.Web25ContentProvider.getNewContentProviderInstance(Web25ContentProvider.java:69)
+	at org.eclipse.jst.jee.ui.internal.navigator.LoadingJeeDDJob.run(LoadingJeeDDJob.java:50)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.jst.j2ee 4 0 2018-09-14 11:14:37.328
+!MESSAGE Plugin org.eclipse.jst.jee, extension org.eclipse.jst.j2ee.J2EEModelProvider
+Version 8.0 of project facet jst.appclient does not exist.
+
+!ENTRY org.eclipse.jst.j2ee 4 0 2018-09-14 11:14:37.335
+!MESSAGE Version 8.0 of project facet jst.appclient does not exist.
+!STACK 0
+java.lang.IllegalArgumentException: Version 8.0 of project facet jst.appclient does not exist.
+	at org.eclipse.wst.common.project.facet.core.util.internal.Versionable.getVersion(Versionable.java:80)
+	at org.eclipse.wst.common.project.facet.core.internal.ProjectFacet.getVersion(ProjectFacet.java:1)
+	at org.eclipse.jst.j2ee.model.J2EEModelProviderRegistry.readElement(J2EEModelProviderRegistry.java:85)
+	at org.eclipse.wst.common.core.util.RegistryReader.internalReadElement(RegistryReader.java:81)
+	at org.eclipse.wst.common.core.util.RegistryReader.readRegistry(RegistryReader.java:122)
+	at org.eclipse.jst.j2ee.model.J2EEModelProviderRegistry.getInstance(J2EEModelProviderRegistry.java:43)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.initProviders(ModelProviderManager.java:262)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getProviders(ModelProviderManager.java:338)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getProvider(ModelProviderManager.java:223)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getModelProvider(ModelProviderManager.java:93)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getModelProvider(ModelProviderManager.java:281)
+	at org.eclipse.jst.jee.ui.internal.navigator.JEE5ContentProvider.getCachedModelProvider(JEE5ContentProvider.java:76)
+	at org.eclipse.jst.jee.ui.internal.navigator.Web25ContentProvider.getNewContentProviderInstance(Web25ContentProvider.java:69)
+	at org.eclipse.jst.jee.ui.internal.navigator.LoadingJeeDDJob.run(LoadingJeeDDJob.java:50)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+!SESSION 2018-09-14 12:00:47.803 -----------------------------------------------
+eclipse.buildId=4.7.1.M20171009-0410
+java.version=1.8.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=pt_PT
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-09-14 12:01:09.878
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\debi_'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jst.j2ee 4 0 2018-09-14 12:01:12.318
+!MESSAGE Plugin org.eclipse.jst.jee, extension org.eclipse.jst.j2ee.J2EEModelProvider
+Version 8.0 of project facet jst.ear does not exist.
+
+!ENTRY org.eclipse.jst.j2ee 4 0 2018-09-14 12:01:12.360
+!MESSAGE Version 8.0 of project facet jst.ear does not exist.
+!STACK 0
+java.lang.IllegalArgumentException: Version 8.0 of project facet jst.ear does not exist.
+	at org.eclipse.wst.common.project.facet.core.util.internal.Versionable.getVersion(Versionable.java:80)
+	at org.eclipse.wst.common.project.facet.core.internal.ProjectFacet.getVersion(ProjectFacet.java:1)
+	at org.eclipse.jst.j2ee.model.J2EEModelProviderRegistry.readElement(J2EEModelProviderRegistry.java:85)
+	at org.eclipse.wst.common.core.util.RegistryReader.internalReadElement(RegistryReader.java:81)
+	at org.eclipse.wst.common.core.util.RegistryReader.readRegistry(RegistryReader.java:122)
+	at org.eclipse.jst.j2ee.model.J2EEModelProviderRegistry.getInstance(J2EEModelProviderRegistry.java:43)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.initProviders(ModelProviderManager.java:262)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getProviders(ModelProviderManager.java:338)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getProvider(ModelProviderManager.java:223)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getModelProvider(ModelProviderManager.java:93)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getModelProvider(ModelProviderManager.java:281)
+	at org.eclipse.jst.jee.ui.internal.navigator.JEE5ContentProvider.getCachedModelProvider(JEE5ContentProvider.java:76)
+	at org.eclipse.jst.jee.ui.internal.navigator.Web25ContentProvider.getNewContentProviderInstance(Web25ContentProvider.java:69)
+	at org.eclipse.jst.jee.ui.internal.navigator.LoadingJeeDDJob.run(LoadingJeeDDJob.java:50)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.jst.j2ee 4 0 2018-09-14 12:01:12.375
+!MESSAGE Plugin org.eclipse.jst.jee, extension org.eclipse.jst.j2ee.J2EEModelProvider
+Version 8.0 of project facet jst.appclient does not exist.
+
+!ENTRY org.eclipse.jst.j2ee 4 0 2018-09-14 12:01:12.382
+!MESSAGE Version 8.0 of project facet jst.appclient does not exist.
+!STACK 0
+java.lang.IllegalArgumentException: Version 8.0 of project facet jst.appclient does not exist.
+	at org.eclipse.wst.common.project.facet.core.util.internal.Versionable.getVersion(Versionable.java:80)
+	at org.eclipse.wst.common.project.facet.core.internal.ProjectFacet.getVersion(ProjectFacet.java:1)
+	at org.eclipse.jst.j2ee.model.J2EEModelProviderRegistry.readElement(J2EEModelProviderRegistry.java:85)
+	at org.eclipse.wst.common.core.util.RegistryReader.internalReadElement(RegistryReader.java:81)
+	at org.eclipse.wst.common.core.util.RegistryReader.readRegistry(RegistryReader.java:122)
+	at org.eclipse.jst.j2ee.model.J2EEModelProviderRegistry.getInstance(J2EEModelProviderRegistry.java:43)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.initProviders(ModelProviderManager.java:262)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getProviders(ModelProviderManager.java:338)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getProvider(ModelProviderManager.java:223)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getModelProvider(ModelProviderManager.java:93)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getModelProvider(ModelProviderManager.java:281)
+	at org.eclipse.jst.jee.ui.internal.navigator.JEE5ContentProvider.getCachedModelProvider(JEE5ContentProvider.java:76)
+	at org.eclipse.jst.jee.ui.internal.navigator.Web25ContentProvider.getNewContentProviderInstance(Web25ContentProvider.java:69)
+	at org.eclipse.jst.jee.ui.internal.navigator.LoadingJeeDDJob.run(LoadingJeeDDJob.java:50)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+!SESSION 2018-09-14 16:12:20.776 -----------------------------------------------
+eclipse.buildId=4.7.1.M20171009-0410
+java.version=1.8.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=pt_PT
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-09-14 16:12:55.159
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\debi_'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jst.j2ee 4 0 2018-09-14 16:25:13.868
+!MESSAGE Plugin org.eclipse.jst.jee, extension org.eclipse.jst.j2ee.J2EEModelProvider
+Version 8.0 of project facet jst.ear does not exist.
+
+!ENTRY org.eclipse.jst.j2ee 4 0 2018-09-14 16:25:13.952
+!MESSAGE Version 8.0 of project facet jst.ear does not exist.
+!STACK 0
+java.lang.IllegalArgumentException: Version 8.0 of project facet jst.ear does not exist.
+	at org.eclipse.wst.common.project.facet.core.util.internal.Versionable.getVersion(Versionable.java:80)
+	at org.eclipse.wst.common.project.facet.core.internal.ProjectFacet.getVersion(ProjectFacet.java:1)
+	at org.eclipse.jst.j2ee.model.J2EEModelProviderRegistry.readElement(J2EEModelProviderRegistry.java:85)
+	at org.eclipse.wst.common.core.util.RegistryReader.internalReadElement(RegistryReader.java:81)
+	at org.eclipse.wst.common.core.util.RegistryReader.readRegistry(RegistryReader.java:122)
+	at org.eclipse.jst.j2ee.model.J2EEModelProviderRegistry.getInstance(J2EEModelProviderRegistry.java:43)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.initProviders(ModelProviderManager.java:262)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getProviders(ModelProviderManager.java:338)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getProvider(ModelProviderManager.java:223)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getModelProvider(ModelProviderManager.java:93)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getModelProvider(ModelProviderManager.java:281)
+	at org.eclipse.jst.jee.ui.internal.navigator.JEE5ContentProvider.getCachedModelProvider(JEE5ContentProvider.java:76)
+	at org.eclipse.jst.jee.ui.internal.navigator.Web25ContentProvider.getNewContentProviderInstance(Web25ContentProvider.java:69)
+	at org.eclipse.jst.jee.ui.internal.navigator.LoadingJeeDDJob.run(LoadingJeeDDJob.java:50)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.jst.j2ee 4 0 2018-09-14 16:25:13.964
+!MESSAGE Plugin org.eclipse.jst.jee, extension org.eclipse.jst.j2ee.J2EEModelProvider
+Version 8.0 of project facet jst.appclient does not exist.
+
+!ENTRY org.eclipse.jst.j2ee 4 0 2018-09-14 16:25:13.994
+!MESSAGE Version 8.0 of project facet jst.appclient does not exist.
+!STACK 0
+java.lang.IllegalArgumentException: Version 8.0 of project facet jst.appclient does not exist.
+	at org.eclipse.wst.common.project.facet.core.util.internal.Versionable.getVersion(Versionable.java:80)
+	at org.eclipse.wst.common.project.facet.core.internal.ProjectFacet.getVersion(ProjectFacet.java:1)
+	at org.eclipse.jst.j2ee.model.J2EEModelProviderRegistry.readElement(J2EEModelProviderRegistry.java:85)
+	at org.eclipse.wst.common.core.util.RegistryReader.internalReadElement(RegistryReader.java:81)
+	at org.eclipse.wst.common.core.util.RegistryReader.readRegistry(RegistryReader.java:122)
+	at org.eclipse.jst.j2ee.model.J2EEModelProviderRegistry.getInstance(J2EEModelProviderRegistry.java:43)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.initProviders(ModelProviderManager.java:262)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getProviders(ModelProviderManager.java:338)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getProvider(ModelProviderManager.java:223)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getModelProvider(ModelProviderManager.java:93)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getModelProvider(ModelProviderManager.java:281)
+	at org.eclipse.jst.jee.ui.internal.navigator.JEE5ContentProvider.getCachedModelProvider(JEE5ContentProvider.java:76)
+	at org.eclipse.jst.jee.ui.internal.navigator.Web25ContentProvider.getNewContentProviderInstance(Web25ContentProvider.java:69)
+	at org.eclipse.jst.jee.ui.internal.navigator.LoadingJeeDDJob.run(LoadingJeeDDJob.java:50)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.jface.text 2 0 2018-09-14 18:30:16.735
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-09-14 18:30:16.767
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-09-14 18:37:52.579
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-09-14 18:37:52.605
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
